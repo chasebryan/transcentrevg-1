@@ -1,0 +1,2284 @@
+{
+  "format": "TranscentreVG-1/video-v1",
+  "duration": 60,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "intro": 3,
+  "stepsPerSecond": 6,
+  "source": "Unmodified VG-1 Simulation, seed 73; display selection has no effect on planning.",
+  "audioScope": "Selected received observation frames at their displayed delivery times; gaps prevent overlap. No added music.",
+  "motion": "Receiver positions are interpolated for display between exact simulation steps.",
+  "audio": [
+    {
+      "time": 3.8333333333333335,
+      "tick": 5,
+      "hex": "d5aa21010104030600010001ea62014a0afa0344aaf505dc07d0640000031eca",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 4,
+        "band": 3,
+        "hops": 6,
+        "epoch": 1,
+        "sequence": 1,
+        "beacon": 60002,
+        "x": 3.3,
+        "y": 28.1,
+        "range": 8.36,
+        "bearing": -2.1771,
+        "sigmaRange": 1.5,
+        "sigmaBearing": 0.2,
+        "quality": 100,
+        "tick": 3
+      }
+    },
+    {
+      "time": 4.833333333333333,
+      "tick": 11,
+      "hex": "d5aa21010102010400010004006e0db7020b0098a1a7049204c1ef000007cdfa",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 1,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 4,
+        "beacon": 110,
+        "x": 35.11,
+        "y": 5.23,
+        "range": 1.52,
+        "bearing": -2.4153,
+        "sigmaRange": 1.17,
+        "sigmaBearing": 0.1217,
+        "quality": 239,
+        "tick": 7
+      }
+    },
+    {
+      "time": 5.5,
+      "tick": 15,
+      "hex": "d5aa210101040306000100050082042a087f0368df2805cd05c86800000d93da",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 4,
+        "band": 3,
+        "hops": 6,
+        "epoch": 1,
+        "sequence": 5,
+        "beacon": 130,
+        "x": 10.66,
+        "y": 21.75,
+        "range": 8.72,
+        "bearing": -0.8408,
+        "sigmaRange": 1.485,
+        "sigmaBearing": 0.148,
+        "quality": 104,
+        "tick": 13
+      }
+    },
+    {
+      "time": 6.5,
+      "tick": 21,
+      "hex": "d5aa21010104030600010007ea6004fd065703002db205dc07d064000013d86e",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 4,
+        "band": 3,
+        "hops": 6,
+        "epoch": 1,
+        "sequence": 7,
+        "beacon": 60000,
+        "x": 12.77,
+        "y": 16.23,
+        "range": 7.68,
+        "bearing": 1.1698,
+        "sigmaRange": 1.5,
+        "sigmaBearing": 0.2,
+        "quality": 100,
+        "tick": 19
+      }
+    },
+    {
+      "time": 7,
+      "tick": 24,
+      "hex": "d5aa2101010302050001000800780aeb05b0045ff05b059d05a081000015a908",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 3,
+        "band": 2,
+        "hops": 5,
+        "epoch": 1,
+        "sequence": 8,
+        "beacon": 120,
+        "x": 27.95,
+        "y": 14.56,
+        "range": 11.19,
+        "bearing": -0.4005,
+        "sigmaRange": 1.437,
+        "sigmaBearing": 0.144,
+        "quality": 129,
+        "tick": 21
+      }
+    },
+    {
+      "time": 7.666666666666667,
+      "tick": 28,
+      "hex": "d5aa2101010303050001000b00830a5a047e00005a5604c704ede6000019ab6d",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 3,
+        "band": 3,
+        "hops": 5,
+        "epoch": 1,
+        "sequence": 11,
+        "beacon": 131,
+        "x": 26.5,
+        "y": 11.5,
+        "range": 0,
+        "bearing": 2.3126,
+        "sigmaRange": 1.223,
+        "sigmaBearing": 0.1261,
+        "quality": 230,
+        "tick": 25
+      }
+    },
+    {
+      "time": 8.333333333333332,
+      "tick": 32,
+      "hex": "d5aa2101010101070001000cea62055d02e501608de205dc07d06400001f3336",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 1,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 12,
+        "beacon": 60002,
+        "x": 13.73,
+        "y": 7.41,
+        "range": 3.52,
+        "bearing": -2.9214,
+        "sigmaRange": 1.5,
+        "sigmaBearing": 0.2,
+        "quality": 100,
+        "tick": 31
+      }
+    },
+    {
+      "time": 8.833333333333332,
+      "tick": 35,
+      "hex": "d5aa2101010303050001000d00830c9d035d033d64d7057e0586930000207d95",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 3,
+        "band": 3,
+        "hops": 5,
+        "epoch": 1,
+        "sequence": 13,
+        "beacon": 131,
+        "x": 32.29,
+        "y": 8.61,
+        "range": 8.29,
+        "bearing": 2.5815,
+        "sigmaRange": 1.406,
+        "sigmaBearing": 0.1414,
+        "quality": 147,
+        "tick": 32
+      }
+    },
+    {
+      "time": 9.333333333333332,
+      "tick": 38,
+      "hex": "d5aa2101010101070001000e006f040b044b040a208a050b0526cf0000258a50",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 1,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 14,
+        "beacon": 111,
+        "x": 10.35,
+        "y": 10.99,
+        "range": 10.34,
+        "bearing": 0.833,
+        "sigmaRange": 1.291,
+        "sigmaBearing": 0.1318,
+        "quality": 207,
+        "tick": 37
+      }
+    },
+    {
+      "time": 10,
+      "tick": 42,
+      "hex": "d5aa21010101010700010010ea6004340473012335a305dc07d06400002996b2",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 1,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 16,
+        "beacon": 60000,
+        "x": 10.76,
+        "y": 11.39,
+        "range": 2.91,
+        "bearing": 1.3731,
+        "sigmaRange": 1.5,
+        "sigmaBearing": 0.2,
+        "quality": 100,
+        "tick": 41
+      }
+    },
+    {
+      "time": 11,
+      "tick": 48,
+      "hex": "d5aa21010104000600010011ea62066404e003e4b97705dc07d06400002e8e80",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 4,
+        "band": 0,
+        "hops": 6,
+        "epoch": 1,
+        "sequence": 17,
+        "beacon": 60002,
+        "x": 16.36,
+        "y": 12.48,
+        "range": 9.96,
+        "bearing": -1.8057,
+        "sigmaRange": 1.5,
+        "sigmaBearing": 0.2,
+        "quality": 100,
+        "tick": 46
+      }
+    },
+    {
+      "time": 11.666666666666666,
+      "tick": 52,
+      "hex": "d5aa21010104010600010013006f06a4057f05bf53340599059c84000032256b",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 4,
+        "band": 1,
+        "hops": 6,
+        "epoch": 1,
+        "sequence": 19,
+        "beacon": 111,
+        "x": 17,
+        "y": 14.07,
+        "range": 14.71,
+        "bearing": 2.13,
+        "sigmaRange": 1.433,
+        "sigmaBearing": 0.1436,
+        "quality": 132,
+        "tick": 50
+      }
+    },
+    {
+      "time": 12.333333333333334,
+      "tick": 56,
+      "hex": "d5aa210101010207000100170079039a074f00d7ab4004cd04f2e50000372df5",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 2,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 23,
+        "beacon": 121,
+        "x": 9.22,
+        "y": 18.71,
+        "range": 2.15,
+        "bearing": -2.1696,
+        "sigmaRange": 1.229,
+        "sigmaBearing": 0.1266,
+        "quality": 229,
+        "tick": 55
+      }
+    },
+    {
+      "time": 12.833333333333334,
+      "tick": 59,
+      "hex": "d5aa2101010300050001001a00650cab036601fbfb0b05320546bc000038d417",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 3,
+        "band": 0,
+        "hops": 5,
+        "epoch": 1,
+        "sequence": 26,
+        "beacon": 101,
+        "x": 32.43,
+        "y": 8.7,
+        "range": 5.07,
+        "bearing": -0.1269,
+        "sigmaRange": 1.33,
+        "sigmaBearing": 0.135,
+        "quality": 188,
+        "tick": 56
+      }
+    },
+    {
+      "time": 13.666666666666666,
+      "tick": 64,
+      "hex": "d5aa2101010102070001001a00790301080b01ccc39604f10510d900003f8644",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 2,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 26,
+        "beacon": 121,
+        "x": 7.69,
+        "y": 20.59,
+        "range": 4.6,
+        "bearing": -1.5466,
+        "sigmaRange": 1.265,
+        "sigmaBearing": 0.1296,
+        "quality": 217,
+        "tick": 63
+      }
+    },
+    {
+      "time": 14.166666666666666,
+      "tick": 67,
+      "hex": "d5aa2101010203040001001900830abf08df038fb5930596059a8600003f5426",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 3,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 25,
+        "beacon": 131,
+        "x": 27.51,
+        "y": 22.71,
+        "range": 9.11,
+        "bearing": -1.9053,
+        "sigmaRange": 1.43,
+        "sigmaBearing": 0.1434,
+        "quality": 134,
+        "tick": 63
+      }
+    },
+    {
+      "time": 14.666666666666666,
+      "tick": 70,
+      "hex": "d5aa2101010102070001001c007902f407fd0112c4a904ed050ddb0000455b10",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 2,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 28,
+        "beacon": 121,
+        "x": 7.56,
+        "y": 20.45,
+        "range": 2.74,
+        "bearing": -1.5191,
+        "sigmaRange": 1.261,
+        "sigmaBearing": 0.1293,
+        "quality": 219,
+        "tick": 69
+      }
+    },
+    {
+      "time": 15.5,
+      "tick": 75,
+      "hex": "d5aa2101010402060001001a0079044b070d01658f4f04eb050bdb000049fe95",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 4,
+        "band": 2,
+        "hops": 6,
+        "epoch": 1,
+        "sequence": 26,
+        "beacon": 121,
+        "x": 10.99,
+        "y": 18.05,
+        "range": 3.57,
+        "bearing": -2.8849,
+        "sigmaRange": 1.259,
+        "sigmaBearing": 0.1291,
+        "quality": 219,
+        "tick": 73
+      }
+    },
+    {
+      "time": 16,
+      "tick": 78,
+      "hex": "d5aa2101010200040001001e0064087008e2035a0ffb058005879200004ab196",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 0,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 30,
+        "beacon": 100,
+        "x": 21.6,
+        "y": 22.74,
+        "range": 8.58,
+        "bearing": 0.4091,
+        "sigmaRange": 1.408,
+        "sigmaBearing": 0.1415,
+        "quality": 146,
+        "tick": 74
+      }
+    },
+    {
+      "time": 16.666666666666664,
+      "tick": 82,
+      "hex": "d5aa21010103010500010026006e0e640487020dbd58054f055ead00004fa6d3",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 3,
+        "band": 1,
+        "hops": 5,
+        "epoch": 1,
+        "sequence": 38,
+        "beacon": 110,
+        "x": 36.84,
+        "y": 11.59,
+        "range": 5.25,
+        "bearing": -1.7064,
+        "sigmaRange": 1.359,
+        "sigmaBearing": 0.1374,
+        "quality": 173,
+        "tick": 79
+      }
+    },
+    {
+      "time": 17.833333333333336,
+      "tick": 89,
+      "hex": "d5aa2101010402060001001f00790269027103f23a2705aa05aa7b00005783fb",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 4,
+        "band": 2,
+        "hops": 6,
+        "epoch": 1,
+        "sequence": 31,
+        "beacon": 121,
+        "x": 6.17,
+        "y": 6.25,
+        "range": 10.1,
+        "bearing": 1.4887,
+        "sigmaRange": 1.45,
+        "sigmaBearing": 0.145,
+        "quality": 123,
+        "tick": 87
+      }
+    },
+    {
+      "time": 19,
+      "tick": 96,
+      "hex": "d5aa21010101030700010025008203e306ff03e7f25005a105a37f00005f0a5b",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 3,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 37,
+        "beacon": 130,
+        "x": 9.95,
+        "y": 17.91,
+        "range": 9.99,
+        "bearing": -0.3504,
+        "sigmaRange": 1.441,
+        "sigmaBearing": 0.1443,
+        "quality": 127,
+        "tick": 95
+      }
+    },
+    {
+      "time": 19.5,
+      "tick": 99,
+      "hex": "d5aa2101010200040001002700650cbd06c0040ed1c605bd05ba7000005f784e",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 0,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 39,
+        "beacon": 101,
+        "x": 32.61,
+        "y": 17.28,
+        "range": 10.38,
+        "bearing": -1.1834,
+        "sigmaRange": 1.469,
+        "sigmaBearing": 0.1466,
+        "quality": 112,
+        "tick": 95
+      }
+    },
+    {
+      "time": 20.666666666666668,
+      "tick": 106,
+      "hex": "d5aa2101010302050001002d0079072d07cb04d391d705c505c16c000067f0ff",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 3,
+        "band": 2,
+        "hops": 5,
+        "epoch": 1,
+        "sequence": 45,
+        "beacon": 121,
+        "x": 18.37,
+        "y": 19.95,
+        "range": 12.35,
+        "bearing": -2.8201,
+        "sigmaRange": 1.477,
+        "sigmaBearing": 0.1473,
+        "quality": 108,
+        "tick": 103
+      }
+    },
+    {
+      "time": 21.5,
+      "tick": 111,
+      "hex": "d5aa21010104030600010027008307e0013f05102d7905bf05bc6f00006d241d",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 4,
+        "band": 3,
+        "hops": 6,
+        "epoch": 1,
+        "sequence": 39,
+        "beacon": 131,
+        "x": 20.16,
+        "y": 3.19,
+        "range": 12.96,
+        "bearing": 1.1641,
+        "sigmaRange": 1.471,
+        "sigmaBearing": 0.1468,
+        "quality": 111,
+        "tick": 109
+      }
+    },
+    {
+      "time": 22.5,
+      "tick": 117,
+      "hex": "d5aa2101010100070001002bea62032d061902fc48dc05dc07d0640000746465",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 0,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 43,
+        "beacon": 60002,
+        "x": 8.13,
+        "y": 15.61,
+        "range": 7.64,
+        "bearing": 1.8652,
+        "sigmaRange": 1.5,
+        "sigmaBearing": 0.2,
+        "quality": 100,
+        "tick": 116
+      }
+    },
+    {
+      "time": 23,
+      "tick": 120,
+      "hex": "d5aa2101010403060001002cea600b30024c0251153e05dc07d0640000767bab",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 4,
+        "band": 3,
+        "hops": 6,
+        "epoch": 1,
+        "sequence": 44,
+        "beacon": 60000,
+        "x": 28.64,
+        "y": 5.88,
+        "range": 5.93,
+        "bearing": 0.5438,
+        "sigmaRange": 1.5,
+        "sigmaBearing": 0.2,
+        "quality": 100,
+        "tick": 118
+      }
+    },
+    {
+      "time": 23.5,
+      "tick": 123,
+      "hex": "d5aa2101010400060001002e00650b91026d02c905aa0587058d8e000079a36b",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 4,
+        "band": 0,
+        "hops": 6,
+        "epoch": 1,
+        "sequence": 46,
+        "beacon": 101,
+        "x": 29.61,
+        "y": 6.21,
+        "range": 7.13,
+        "bearing": 0.145,
+        "sigmaRange": 1.415,
+        "sigmaBearing": 0.1421,
+        "quality": 142,
+        "tick": 121
+      }
+    },
+    {
+      "time": 24.666666666666668,
+      "tick": 130,
+      "hex": "d5aa2101010202040001003000780b440658041ef089059c059e8200007ee727",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 2,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 48,
+        "beacon": 120,
+        "x": 28.84,
+        "y": 16.24,
+        "range": 10.54,
+        "bearing": -0.3959,
+        "sigmaRange": 1.436,
+        "sigmaBearing": 0.1438,
+        "quality": 130,
+        "tick": 126
+      }
+    },
+    {
+      "time": 25.666666666666668,
+      "tick": 136,
+      "hex": "d5aa2101010202040001003200780c47043b02b101250527053dc2000084890a",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 2,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 50,
+        "beacon": 120,
+        "x": 31.43,
+        "y": 10.83,
+        "range": 6.89,
+        "bearing": 0.0293,
+        "sigmaRange": 1.319,
+        "sigmaBearing": 0.1341,
+        "quality": 194,
+        "tick": 132
+      }
+    },
+    {
+      "time": 26.333333333333332,
+      "tick": 140,
+      "hex": "d5aa21010101010700010034006f02670536036dd584057a05829500008bef03",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 1,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 52,
+        "beacon": 111,
+        "x": 6.15,
+        "y": 13.34,
+        "range": 8.77,
+        "bearing": -1.0876,
+        "sigmaRange": 1.402,
+        "sigmaBearing": 0.141,
+        "quality": 149,
+        "tick": 139
+      }
+    },
+    {
+      "time": 27.333333333333332,
+      "tick": 146,
+      "hex": "d5aa2101010202040001003500780da1020102972f710536054aba00008b97dc",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 2,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 53,
+        "beacon": 120,
+        "x": 34.89,
+        "y": 5.13,
+        "range": 6.63,
+        "bearing": 1.2145,
+        "sigmaRange": 1.334,
+        "sigmaBearing": 0.1354,
+        "quality": 186,
+        "tick": 139
+      }
+    },
+    {
+      "time": 28.166666666666668,
+      "tick": 151,
+      "hex": "d5aa21010104010600010036006f08cc01de059e18d205c705c36b0000930910",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 4,
+        "band": 1,
+        "hops": 6,
+        "epoch": 1,
+        "sequence": 54,
+        "beacon": 111,
+        "x": 22.52,
+        "y": 4.78,
+        "range": 14.38,
+        "bearing": 0.6354,
+        "sigmaRange": 1.479,
+        "sigmaBearing": 0.1475,
+        "quality": 107,
+        "tick": 147
+      }
+    },
+    {
+      "time": 28.833333333333332,
+      "tick": 155,
+      "hex": "d5aa21010104010600010039006f068501af02176f1a0526053cc2000099467f",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 4,
+        "band": 1,
+        "hops": 6,
+        "epoch": 1,
+        "sequence": 57,
+        "beacon": 111,
+        "x": 16.69,
+        "y": 4.31,
+        "range": 5.35,
+        "bearing": 2.8442,
+        "sigmaRange": 1.318,
+        "sigmaBearing": 0.134,
+        "quality": 194,
+        "tick": 153
+      }
+    },
+    {
+      "time": 29.666666666666668,
+      "tick": 160,
+      "hex": "d5aa2101010203040001003aea610f0a00f001098d7d05dc07d06400009c15eb",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 3,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 58,
+        "beacon": 60001,
+        "x": 38.5,
+        "y": 2.4,
+        "range": 2.65,
+        "bearing": -2.9315,
+        "sigmaRange": 1.5,
+        "sigmaBearing": 0.2,
+        "quality": 100,
+        "tick": 156
+      }
+    },
+    {
+      "time": 30.333333333333332,
+      "tick": 164,
+      "hex": "d5aa2101010102070001003c007905ab039c03c150db05a205a47f0000a3dec2",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 2,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 60,
+        "beacon": 121,
+        "x": 14.51,
+        "y": 9.24,
+        "range": 9.61,
+        "bearing": 2.0699,
+        "sigmaRange": 1.442,
+        "sigmaBearing": 0.1444,
+        "quality": 127,
+        "tick": 163
+      }
+    },
+    {
+      "time": 31.166666666666668,
+      "tick": 169,
+      "hex": "d5aa2101010300050001004600640caf066b035d45c7059d05a0820000a61f5a",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 3,
+        "band": 0,
+        "hops": 5,
+        "epoch": 1,
+        "sequence": 70,
+        "beacon": 100,
+        "x": 32.47,
+        "y": 16.43,
+        "range": 8.61,
+        "bearing": 1.7863,
+        "sigmaRange": 1.437,
+        "sigmaBearing": 0.144,
+        "quality": 130,
+        "tick": 166
+      }
+    },
+    {
+      "time": 31.666666666666668,
+      "tick": 172,
+      "hex": "d5aa21010103010500010048006e0bf005fc047ed1c105c805c36a0000a984ee",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 3,
+        "band": 1,
+        "hops": 5,
+        "epoch": 1,
+        "sequence": 72,
+        "beacon": 110,
+        "x": 30.56,
+        "y": 15.32,
+        "range": 11.5,
+        "bearing": -1.1839,
+        "sigmaRange": 1.48,
+        "sigmaBearing": 0.1475,
+        "quality": 106,
+        "tick": 169
+      }
+    },
+    {
+      "time": 32.33333333333333,
+      "tick": 176,
+      "hex": "d5aa210101010307000100410082034c039304b40d4f05d005ca660000afc74d",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 3,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 65,
+        "beacon": 130,
+        "x": 8.44,
+        "y": 9.15,
+        "range": 12.04,
+        "bearing": 0.3407,
+        "sigmaRange": 1.488,
+        "sigmaBearing": 0.1482,
+        "quality": 102,
+        "tick": 175
+      }
+    },
+    {
+      "time": 32.83333333333333,
+      "tick": 179,
+      "hex": "d5aa2101010200040001003e00650c6a008104cd1c0c05910596880000a9d4d6",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 0,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 62,
+        "beacon": 101,
+        "x": 31.78,
+        "y": 1.29,
+        "range": 12.29,
+        "bearing": 0.718,
+        "sigmaRange": 1.425,
+        "sigmaBearing": 0.143,
+        "quality": 136,
+        "tick": 169
+      }
+    },
+    {
+      "time": 33.66666666666667,
+      "tick": 184,
+      "hex": "d5aa21010101030700010044ea6104820230021f35b705dc07d0640000b73ae2",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 3,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 68,
+        "beacon": 60001,
+        "x": 11.54,
+        "y": 5.6,
+        "range": 5.43,
+        "bearing": 1.3751,
+        "sigmaRange": 1.5,
+        "sigmaBearing": 0.2,
+        "quality": 100,
+        "tick": 183
+      }
+    },
+    {
+      "time": 34.83333333333333,
+      "tick": 191,
+      "hex": "d5aa2101010200040001004500650b0503d90464027705af05ae780000bb7e5b",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 0,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 69,
+        "beacon": 101,
+        "x": 28.21,
+        "y": 9.85,
+        "range": 11.24,
+        "bearing": 0.0631,
+        "sigmaRange": 1.455,
+        "sigmaBearing": 0.1454,
+        "quality": 120,
+        "tick": 187
+      }
+    },
+    {
+      "time": 36,
+      "tick": 198,
+      "hex": "d5aa21010103020500010051007906fe05b30469700905af05ae780000c11216",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 3,
+        "band": 2,
+        "hops": 5,
+        "epoch": 1,
+        "sequence": 81,
+        "beacon": 121,
+        "x": 17.9,
+        "y": 14.59,
+        "range": 11.29,
+        "bearing": 2.8681,
+        "sigmaRange": 1.455,
+        "sigmaBearing": 0.1454,
+        "quality": 120,
+        "tick": 193
+      }
+    },
+    {
+      "time": 36.666666666666664,
+      "tick": 202,
+      "hex": "d5aa210101030205000100530079054d07520246967d0537054bb90000c73029",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 3,
+        "band": 2,
+        "hops": 5,
+        "epoch": 1,
+        "sequence": 83,
+        "beacon": 121,
+        "x": 13.57,
+        "y": 18.74,
+        "range": 5.82,
+        "bearing": -2.7011,
+        "sigmaRange": 1.335,
+        "sigmaBearing": 0.1355,
+        "quality": 185,
+        "tick": 199
+      }
+    },
+    {
+      "time": 37.5,
+      "tick": 207,
+      "hex": "d5aa2101010201040001004a006f0710062c0520a56005d305cd640000cb83ef",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 1,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 74,
+        "beacon": 111,
+        "x": 18.08,
+        "y": 15.8,
+        "range": 13.12,
+        "bearing": -2.32,
+        "sigmaRange": 1.491,
+        "sigmaBearing": 0.1485,
+        "quality": 100,
+        "tick": 203
+      }
+    },
+    {
+      "time": 38.666666666666664,
+      "tick": 214,
+      "hex": "d5aa210101030205000100590079016c09980390dae3057d0585940000d3df81",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 3,
+        "band": 2,
+        "hops": 5,
+        "epoch": 1,
+        "sequence": 89,
+        "beacon": 121,
+        "x": 3.64,
+        "y": 24.56,
+        "range": 9.12,
+        "bearing": -0.9501,
+        "sigmaRange": 1.405,
+        "sigmaBearing": 0.1413,
+        "quality": 148,
+        "tick": 211
+      }
+    },
+    {
+      "time": 39.333333333333336,
+      "tick": 218,
+      "hex": "d5aa2101010101070001004e006f06860253011c880a051e0535c60000d9a0c5",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 1,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 78,
+        "beacon": 111,
+        "x": 16.7,
+        "y": 5.95,
+        "range": 2.84,
+        "bearing": -3.071,
+        "sigmaRange": 1.31,
+        "sigmaBearing": 0.1333,
+        "quality": 198,
+        "tick": 217
+      }
+    },
+    {
+      "time": 40.333333333333336,
+      "tick": 224,
+      "hex": "d5aa21010101010700010051006f0548044202a8b5ae0517052fc90000df5b55",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 1,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 81,
+        "beacon": 111,
+        "x": 13.52,
+        "y": 10.9,
+        "range": 6.8,
+        "bearing": -1.9026,
+        "sigmaRange": 1.303,
+        "sigmaBearing": 0.1327,
+        "quality": 201,
+        "tick": 223
+      }
+    },
+    {
+      "time": 41.5,
+      "tick": 231,
+      "hex": "d5aa21010101010700010053006f04650522040dba9005470558b10000e65c85",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 1,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 83,
+        "beacon": 111,
+        "x": 11.25,
+        "y": 13.14,
+        "range": 10.37,
+        "bearing": -1.7776,
+        "sigmaRange": 1.351,
+        "sigmaBearing": 0.1368,
+        "quality": 177,
+        "tick": 230
+      }
+    },
+    {
+      "time": 42.5,
+      "tick": 237,
+      "hex": "d5aa21010101010700010056006f06af04a10330a479056b05769e0000ecd2c1",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 1,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 86,
+        "beacon": 111,
+        "x": 17.11,
+        "y": 11.85,
+        "range": 8.16,
+        "bearing": -2.3431,
+        "sigmaRange": 1.387,
+        "sigmaBearing": 0.1398,
+        "quality": 158,
+        "tick": 236
+      }
+    },
+    {
+      "time": 43.333333333333336,
+      "tick": 242,
+      "hex": "d5aa210101010207000100580079071504c205ce696205c905c46a0000f104c3",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 2,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 88,
+        "beacon": 121,
+        "x": 18.13,
+        "y": 12.18,
+        "range": 14.86,
+        "bearing": 2.6978,
+        "sigmaRange": 1.481,
+        "sigmaBearing": 0.1476,
+        "quality": 106,
+        "tick": 241
+      }
+    },
+    {
+      "time": 43.833333333333336,
+      "tick": 245,
+      "hex": "d5aa210101020304000100560082081808230345bd3b054b055baf0000f17ebc",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 3,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 86,
+        "beacon": 130,
+        "x": 20.72,
+        "y": 20.83,
+        "range": 8.37,
+        "bearing": -1.7093,
+        "sigmaRange": 1.355,
+        "sigmaBearing": 0.1371,
+        "quality": 175,
+        "tick": 241
+      }
+    },
+    {
+      "time": 44.333333333333336,
+      "tick": 248,
+      "hex": "d5aa210101020304000100580083092708a40394c8b8057c0584940000f4fe2d",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 3,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 88,
+        "beacon": 131,
+        "x": 23.43,
+        "y": 22.12,
+        "range": 9.16,
+        "bearing": -1.4152,
+        "sigmaRange": 1.404,
+        "sigmaBearing": 0.1412,
+        "quality": 148,
+        "tick": 244
+      }
+    },
+    {
+      "time": 44.833333333333336,
+      "tick": 251,
+      "hex": "d5aa2101010203040001005a00820a2d093404c3af3005d305cd640000f7b016",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 3,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 90,
+        "beacon": 130,
+        "x": 26.05,
+        "y": 23.56,
+        "range": 12.19,
+        "bearing": -2.0688,
+        "sigmaRange": 1.491,
+        "sigmaBearing": 0.1485,
+        "quality": 100,
+        "tick": 247
+      }
+    },
+    {
+      "time": 46.166666666666664,
+      "tick": 259,
+      "hex": "d5aa2101010102070001005eea6109b005420224fefb05dc07d0640001025b7a",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 2,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 94,
+        "beacon": 60001,
+        "x": 24.8,
+        "y": 13.46,
+        "range": 5.48,
+        "bearing": -0.0261,
+        "sigmaRange": 1.5,
+        "sigmaBearing": 0.2,
+        "quality": 100,
+        "tick": 258
+      }
+    },
+    {
+      "time": 47.333333333333336,
+      "tick": 266,
+      "hex": "d5aa21010101030700010061008207e806d300dbb12304ea050adc00010983e6",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 3,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 97,
+        "beacon": 130,
+        "x": 20.24,
+        "y": 17.47,
+        "range": 2.19,
+        "bearing": -2.0189,
+        "sigmaRange": 1.258,
+        "sigmaBearing": 0.129,
+        "quality": 220,
+        "tick": 265
+      }
+    },
+    {
+      "time": 47.833333333333336,
+      "tick": 269,
+      "hex": "d5aa21010101030700010064ea600702061203d78b8b05dc07d06400010cd4a2",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 3,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 100,
+        "beacon": 60000,
+        "x": 17.94,
+        "y": 15.54,
+        "range": 9.83,
+        "bearing": -2.9813,
+        "sigmaRange": 1.5,
+        "sigmaBearing": 0.2,
+        "quality": 100,
+        "tick": 268
+      }
+    },
+    {
+      "time": 48.333333333333336,
+      "tick": 272,
+      "hex": "d5aa2101010103070001006600820621054c00cdfef904e40505de00010f0f2a",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 3,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 102,
+        "beacon": 130,
+        "x": 15.69,
+        "y": 13.56,
+        "range": 2.05,
+        "bearing": -0.0263,
+        "sigmaRange": 1.252,
+        "sigmaBearing": 0.1285,
+        "quality": 222,
+        "tick": 271
+      }
+    },
+    {
+      "time": 48.833333333333336,
+      "tick": 275,
+      "hex": "d5aa21010101030700010068ea60054a047b0413b73905dc07d0640001122e5b",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 3,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 104,
+        "beacon": 60000,
+        "x": 13.54,
+        "y": 11.47,
+        "range": 10.43,
+        "bearing": -1.8631,
+        "sigmaRange": 1.5,
+        "sigmaBearing": 0.2,
+        "quality": 100,
+        "tick": 274
+      }
+    },
+    {
+      "time": 49.333333333333336,
+      "tick": 278,
+      "hex": "d5aa2101010103070001006a00820497039203af18b5057c058494000115b8f0",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 3,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 106,
+        "beacon": 130,
+        "x": 11.75,
+        "y": 9.14,
+        "range": 9.43,
+        "bearing": 0.6325,
+        "sigmaRange": 1.404,
+        "sigmaBearing": 0.1412,
+        "quality": 148,
+        "tick": 277
+      }
+    },
+    {
+      "time": 49.833333333333336,
+      "tick": 281,
+      "hex": "d5aa2101010200040001006400640ab2099c010c127404d204f6e3000115bf54",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 2,
+        "band": 0,
+        "hops": 4,
+        "epoch": 1,
+        "sequence": 100,
+        "beacon": 100,
+        "x": 27.38,
+        "y": 24.6,
+        "range": 2.68,
+        "bearing": 0.4724,
+        "sigmaRange": 1.234,
+        "sigmaBearing": 0.127,
+        "quality": 227,
+        "tick": 277
+      }
+    },
+    {
+      "time": 50.333333333333336,
+      "tick": 284,
+      "hex": "d5aa2101010103070001006e00820672035201c92abd052b0540c000011bdd81",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 1,
+        "band": 3,
+        "hops": 7,
+        "epoch": 1,
+        "sequence": 110,
+        "beacon": 130,
+        "x": 16.5,
+        "y": 8.5,
+        "range": 4.57,
+        "bearing": 1.0941,
+        "sigmaRange": 1.323,
+        "sigmaBearing": 0.1344,
+        "quality": 192,
+        "tick": 283
+      }
+    },
+    {
+      "time": 51,
+      "tick": 288,
+      "hex": "d5aa2101010301050001006c006f01ec05ab0407d88e05aa05aa7a0001195796",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 3,
+        "band": 1,
+        "hops": 5,
+        "epoch": 1,
+        "sequence": 108,
+        "beacon": 111,
+        "x": 4.92,
+        "y": 14.51,
+        "range": 10.31,
+        "bearing": -1.0098,
+        "sigmaRange": 1.45,
+        "sigmaBearing": 0.145,
+        "quality": 122,
+        "tick": 281
+      }
+    },
+    {
+      "time": 51.833333333333336,
+      "tick": 293,
+      "hex": "d5aa210101040306000100660082071a09a4066d9b0105b705b573000123b8cb",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 4,
+        "band": 3,
+        "hops": 6,
+        "epoch": 1,
+        "sequence": 102,
+        "beacon": 130,
+        "x": 18.18,
+        "y": 24.68,
+        "range": 16.45,
+        "bearing": -2.5855,
+        "sigmaRange": 1.463,
+        "sigmaBearing": 0.1461,
+        "quality": 115,
+        "tick": 291
+      }
+    },
+    {
+      "time": 52.666666666666664,
+      "tick": 298,
+      "hex": "d5aa21010104030600010069008308f5090902abbc0f059b059e82000128f308",
+      "packet": {
+        "type": 1,
+        "sender": 1,
+        "origin": 4,
+        "band": 3,
+        "hops": 6,
+        "epoch": 1,
+        "sequence": 105,
+        "beacon": 131,
+        "x": 22.93,
+        "y": 23.13,
+        "range": 6.83,
+        "bearing": -1.7393,
+        "sigmaRange": 1.435,
+        "sigmaBearing": 0.1438,
+        "quality": 130,
+        "tick": 296
+      }
+    }
+  ],
+  "report": {
+    "format": "TranscentreVG-1/mission-v1",
+    "config": {
+      "seed": 73,
+      "epoch": 1,
+      "mode": "adaptive",
+      "loss": 0.04,
+      "corruption": 0.01,
+      "outliers": 0.08,
+      "hops": 8,
+      "limit": 300
+    },
+    "tick": 300,
+    "status": "finished",
+    "controls": [],
+    "coverage": {
+      "fraction": 0.9983258928571429,
+      "threshold": 0.9,
+      "counts": [
+        1340,
+        1343,
+        1340,
+        1344
+      ],
+      "total": 5376
+    },
+    "tracks": [
+      {
+        "id": 110,
+        "band": 1,
+        "status": "confirmed",
+        "accepted": 7,
+        "rejected": 1,
+        "support": 7,
+        "supportingObservers": [
+          2,
+          3,
+          4
+        ],
+        "firstConfirmedTick": 82,
+        "effectiveObservations": 7,
+        "observers": [
+          2,
+          3,
+          4
+        ],
+        "geometryDegrees": 82.9072033116864,
+        "lastSeen": 169,
+        "estimate": {
+          "x": 34.49997191202525,
+          "y": 4.500375505849002,
+          "xx": 0.08392600786673446,
+          "yy": 0.0837252721025446,
+          "xy": 0.00014623781066148715,
+          "radius95": 0.707483336065629,
+          "entropy": 0.007914633399890958,
+          "peak": 202
+        }
+      },
+      {
+        "id": 60002,
+        "band": 3,
+        "status": "candidate",
+        "accepted": 1,
+        "rejected": 0,
+        "support": 0,
+        "supportingObservers": [],
+        "firstConfirmedTick": null,
+        "effectiveObservations": 1,
+        "observers": [
+          4
+        ],
+        "geometryDegrees": 0,
+        "lastSeen": 3,
+        "estimate": {
+          "x": 4.832823776998608,
+          "y": 19.86257697836988,
+          "xx": 92.82584280550086,
+          "yy": 22.542859204911885,
+          "xy": -15.322172317887071,
+          "radius95": 29.062321649116168,
+          "entropy": 4.0638093983359465,
+          "peak": 840
+        }
+      },
+      {
+        "id": 130,
+        "band": 3,
+        "status": "confirmed",
+        "accepted": 21,
+        "rejected": 2,
+        "support": 21,
+        "supportingObservers": [
+          4,
+          3,
+          2,
+          1
+        ],
+        "firstConfirmedTick": 44,
+        "effectiveObservations": 20.25,
+        "observers": [
+          4,
+          3,
+          2,
+          1
+        ],
+        "geometryDegrees": 89.78811932589156,
+        "lastSeen": 297,
+        "estimate": {
+          "x": 18.694618774692792,
+          "y": 13.50304815947998,
+          "xx": 0.24008053085636494,
+          "yy": 0.08639525223304147,
+          "xy": 0.0019405138450201218,
+          "radius95": 1.512493774720436,
+          "entropy": 0.5109202241150103,
+          "peak": 564
+        }
+      },
+      {
+        "id": 60000,
+        "band": 0,
+        "status": "localising",
+        "accepted": 4,
+        "rejected": 0,
+        "support": 2,
+        "supportingObservers": [
+          3
+        ],
+        "firstConfirmedTick": null,
+        "effectiveObservations": 4,
+        "observers": [
+          1,
+          3
+        ],
+        "geometryDegrees": 0,
+        "lastSeen": 65,
+        "estimate": {
+          "x": 28.20525957518706,
+          "y": 5.850729433487097,
+          "xx": 5.253780817370195,
+          "yy": 1.5152232110799155,
+          "xy": -0.4179429859736769,
+          "radius95": 3.730829548179191,
+          "entropy": 2.900842874212034,
+          "peak": 238
+        }
+      },
+      {
+        "id": 120,
+        "band": 2,
+        "status": "confirmed",
+        "accepted": 10,
+        "rejected": 0,
+        "support": 10,
+        "supportingObservers": [
+          3,
+          2,
+          1
+        ],
+        "firstConfirmedTick": 50,
+        "effectiveObservations": 9.25,
+        "observers": [
+          3,
+          2,
+          1
+        ],
+        "geometryDegrees": 86.91863769703556,
+        "lastSeen": 252,
+        "estimate": {
+          "x": 37.51408993232113,
+          "y": 10.544294059660805,
+          "xx": 0.2166587329633599,
+          "yy": 0.1816952217124964,
+          "xy": 0.007898675279747787,
+          "radius95": 1.7221636045005448,
+          "entropy": 0.8674916814682053,
+          "peak": 457
+        }
+      },
+      {
+        "id": 60000,
+        "band": 3,
+        "status": "localising",
+        "accepted": 4,
+        "rejected": 0,
+        "support": 0,
+        "supportingObservers": [],
+        "firstConfirmedTick": null,
+        "effectiveObservations": 4,
+        "observers": [
+          4,
+          1
+        ],
+        "geometryDegrees": 0,
+        "lastSeen": 274,
+        "estimate": {
+          "x": 15.421824892759966,
+          "y": 12.103980483384758,
+          "xx": 89.69958086435601,
+          "yy": 64.17959001396227,
+          "xy": 0.5071744477689233,
+          "radius95": 20.3329418389338,
+          "entropy": 5.132594643931875,
+          "peak": 52
+        }
+      },
+      {
+        "id": 111,
+        "band": 1,
+        "status": "confirmed",
+        "accepted": 16,
+        "rejected": 3,
+        "support": 15,
+        "supportingObservers": [
+          1,
+          4,
+          3,
+          2
+        ],
+        "firstConfirmedTick": 155,
+        "effectiveObservations": 13.75,
+        "observers": [
+          1,
+          4,
+          3,
+          2
+        ],
+        "geometryDegrees": 88.76381805891246,
+        "lastSeen": 281,
+        "estimate": {
+          "x": 10.825240556192488,
+          "y": 5.578313797609304,
+          "xx": 0.30280982825478214,
+          "yy": 0.1562025539373771,
+          "xy": 0.04324917887816345,
+          "radius95": 1.8493877285391704,
+          "entropy": 0.8533252631169689,
+          "peak": 220
+        }
+      },
+      {
+        "id": 131,
+        "band": 3,
+        "status": "confirmed",
+        "accepted": 16,
+        "rejected": 0,
+        "support": 16,
+        "supportingObservers": [
+          3,
+          2,
+          4,
+          1
+        ],
+        "firstConfirmedTick": 54,
+        "effectiveObservations": 15.25,
+        "observers": [
+          3,
+          2,
+          4,
+          1
+        ],
+        "geometryDegrees": 88.59124560138999,
+        "lastSeen": 296,
+        "estimate": {
+          "x": 24.497867789423385,
+          "y": 13.523675634611127,
+          "xx": 0.08557277221863555,
+          "yy": 0.10645869004742017,
+          "xy": -0.0004969335070651776,
+          "radius95": 0.730878234574648,
+          "entropy": 0.1274287179292181,
+          "peak": 570
+        }
+      },
+      {
+        "id": 60002,
+        "band": 1,
+        "status": "localising",
+        "accepted": 2,
+        "rejected": 0,
+        "support": 0,
+        "supportingObservers": [],
+        "firstConfirmedTick": null,
+        "effectiveObservations": 2,
+        "observers": [
+          1
+        ],
+        "geometryDegrees": 0,
+        "lastSeen": 130,
+        "estimate": {
+          "x": 7.70575019741516,
+          "y": 16.871476823403626,
+          "xx": 20.83943123962467,
+          "yy": 87.8144906243478,
+          "xy": -21.215613810382298,
+          "radius95": 13.104052838216846,
+          "entropy": 4.012857517417658,
+          "peak": 262
+        }
+      },
+      {
+        "id": 60000,
+        "band": 1,
+        "status": "localising",
+        "accepted": 2,
+        "rejected": 0,
+        "support": 1,
+        "supportingObservers": [
+          3
+        ],
+        "firstConfirmedTick": null,
+        "effectiveObservations": 2,
+        "observers": [
+          1,
+          3
+        ],
+        "geometryDegrees": 0,
+        "lastSeen": 171,
+        "estimate": {
+          "x": 21.3008078879651,
+          "y": 9.693458383988872,
+          "xx": 33.868664110613764,
+          "yy": 14.247097075256134,
+          "xy": -15.66223833873492,
+          "radius95": 12.639618839730225,
+          "entropy": 4.365208977327057,
+          "peak": 599
+        }
+      },
+      {
+        "id": 100,
+        "band": 0,
+        "status": "confirmed",
+        "accepted": 11,
+        "rejected": 2,
+        "support": 11,
+        "supportingObservers": [
+          4,
+          2,
+          3
+        ],
+        "firstConfirmedTick": 96,
+        "effectiveObservations": 11,
+        "observers": [
+          4,
+          2,
+          3
+        ],
+        "geometryDegrees": 88.4071780980122,
+        "lastSeen": 283,
+        "estimate": {
+          "x": 29.84895984136453,
+          "y": 25.691244002598786,
+          "xx": 0.3105301715696476,
+          "yy": 0.23800322225396192,
+          "xy": 0.08245062837459562,
+          "radius95": 1.7453454587017574,
+          "entropy": 1.0409546866625583,
+          "peak": 1079
+        }
+      },
+      {
+        "id": 60002,
+        "band": 0,
+        "status": "localising",
+        "accepted": 2,
+        "rejected": 0,
+        "support": 0,
+        "supportingObservers": [],
+        "firstConfirmedTick": null,
+        "effectiveObservations": 2,
+        "observers": [
+          4,
+          1
+        ],
+        "geometryDegrees": 0,
+        "lastSeen": 116,
+        "estimate": {
+          "x": 10.629252222112381,
+          "y": 11.881853227983823,
+          "xx": 24.46433176277488,
+          "yy": 102.45971296421376,
+          "xy": -38.973494778878674,
+          "radius95": 14.937519474358684,
+          "entropy": 4.579152822549141,
+          "peak": 98
+        }
+      },
+      {
+        "id": 121,
+        "band": 2,
+        "status": "confirmed",
+        "accepted": 21,
+        "rejected": 4,
+        "support": 21,
+        "supportingObservers": [
+          1,
+          4,
+          3
+        ],
+        "firstConfirmedTick": 75,
+        "effectiveObservations": 20.25,
+        "observers": [
+          1,
+          4,
+          3
+        ],
+        "geometryDegrees": 88.42543141576417,
+        "lastSeen": 296,
+        "estimate": {
+          "x": 7.4997683195325004,
+          "y": 16.502761310512273,
+          "xx": 0.08357257159174619,
+          "yy": 0.08608715406120966,
+          "xy": 3.946828016495373e-06,
+          "radius95": 0.7098777939227527,
+          "entropy": 0.02126418321913725,
+          "peak": 679
+        }
+      },
+      {
+        "id": 101,
+        "band": 0,
+        "status": "confirmed",
+        "accepted": 10,
+        "rejected": 0,
+        "support": 10,
+        "supportingObservers": [
+          3,
+          2,
+          4
+        ],
+        "firstConfirmedTick": 99,
+        "effectiveObservations": 9.25,
+        "observers": [
+          3,
+          2,
+          4
+        ],
+        "geometryDegrees": 88.76265758262939,
+        "lastSeen": 187,
+        "estimate": {
+          "x": 38.229132994602686,
+          "y": 8.01056052707279,
+          "xx": 0.2843200958734484,
+          "yy": 0.3357237352306965,
+          "xy": 0.01367275575409457,
+          "radius95": 1.5972230520316135,
+          "entropy": 1.2986190958026111,
+          "peak": 374
+        }
+      },
+      {
+        "id": 60001,
+        "band": 3,
+        "status": "localising",
+        "accepted": 2,
+        "rejected": 0,
+        "support": 0,
+        "supportingObservers": [],
+        "firstConfirmedTick": null,
+        "effectiveObservations": 2,
+        "observers": [
+          2,
+          1
+        ],
+        "geometryDegrees": 0,
+        "lastSeen": 183,
+        "estimate": {
+          "x": 19.80582011761853,
+          "y": 8.55523843634622,
+          "xx": 112.25314509307378,
+          "yy": 26.24797963836078,
+          "xy": -43.58865555906931,
+          "radius95": 18.83090415753699,
+          "entropy": 4.02281433468989,
+          "peak": 432
+        }
+      },
+      {
+        "id": 60000,
+        "band": 2,
+        "status": "candidate",
+        "accepted": 1,
+        "rejected": 0,
+        "support": 1,
+        "supportingObservers": [
+          3
+        ],
+        "firstConfirmedTick": null,
+        "effectiveObservations": 1,
+        "observers": [
+          3
+        ],
+        "geometryDegrees": 0,
+        "lastSeen": 209,
+        "estimate": {
+          "x": 12.481133823911138,
+          "y": 29.58092687469359,
+          "xx": 21.610386386610525,
+          "yy": 24.146636377963027,
+          "xy": -10.526873554156174,
+          "radius95": 18.468233542335604,
+          "entropy": 3.7392779560743423,
+          "peak": 1313
+        }
+      },
+      {
+        "id": 60001,
+        "band": 2,
+        "status": "candidate",
+        "accepted": 1,
+        "rejected": 0,
+        "support": 1,
+        "supportingObservers": [
+          1
+        ],
+        "firstConfirmedTick": null,
+        "effectiveObservations": 1,
+        "observers": [
+          1
+        ],
+        "geometryDegrees": 0,
+        "lastSeen": 258,
+        "estimate": {
+          "x": 29.990516983708513,
+          "y": 13.472183525970785,
+          "xx": 16.060508080345766,
+          "yy": 6.965490399801963,
+          "xy": -1.4764519121857393,
+          "radius95": 9.253101132858664,
+          "entropy": 3.7800315445671577,
+          "peak": 576
+        }
+      }
+    ],
+    "network": {
+      "sent": 1181,
+      "received": 441,
+      "losses": 36,
+      "crcRejected": 10,
+      "retries": 46,
+      "expired": 0,
+      "duplicates": 0,
+      "stale": 0,
+      "overflow": 0,
+      "rerouted": 0,
+      "captureOmitted": 121,
+      "queued": 2
+    },
+    "timeline": [
+      {
+        "tick": 12,
+        "coverage": 0.11923363095238096,
+        "confirmed": 0
+      },
+      {
+        "tick": 24,
+        "coverage": 0.27548363095238093,
+        "confirmed": 0
+      },
+      {
+        "tick": 36,
+        "coverage": 0.4361979166666667,
+        "confirmed": 0
+      },
+      {
+        "tick": 48,
+        "coverage": 0.5383184523809523,
+        "confirmed": 1
+      },
+      {
+        "tick": 60,
+        "coverage": 0.6519717261904762,
+        "confirmed": 3
+      },
+      {
+        "tick": 72,
+        "coverage": 0.7325148809523809,
+        "confirmed": 3
+      },
+      {
+        "tick": 84,
+        "coverage": 0.7873883928571429,
+        "confirmed": 5
+      },
+      {
+        "tick": 96,
+        "coverage": 0.8457961309523809,
+        "confirmed": 6
+      },
+      {
+        "tick": 108,
+        "coverage": 0.9068080357142857,
+        "confirmed": 7
+      },
+      {
+        "tick": 120,
+        "coverage": 0.9348958333333334,
+        "confirmed": 7
+      },
+      {
+        "tick": 132,
+        "coverage": 0.9497767857142857,
+        "confirmed": 7
+      },
+      {
+        "tick": 144,
+        "coverage": 0.9624255952380952,
+        "confirmed": 7
+      },
+      {
+        "tick": 156,
+        "coverage": 0.9752604166666666,
+        "confirmed": 8
+      },
+      {
+        "tick": 168,
+        "coverage": 0.9780505952380952,
+        "confirmed": 8
+      },
+      {
+        "tick": 180,
+        "coverage": 0.9800967261904762,
+        "confirmed": 8
+      },
+      {
+        "tick": 192,
+        "coverage": 0.9817708333333334,
+        "confirmed": 8
+      },
+      {
+        "tick": 204,
+        "coverage": 0.9827008928571429,
+        "confirmed": 8
+      },
+      {
+        "tick": 216,
+        "coverage": 0.9841889880952381,
+        "confirmed": 8
+      },
+      {
+        "tick": 228,
+        "coverage": 0.9875372023809523,
+        "confirmed": 8
+      },
+      {
+        "tick": 240,
+        "coverage": 0.9875372023809523,
+        "confirmed": 8
+      },
+      {
+        "tick": 252,
+        "coverage": 0.9886532738095238,
+        "confirmed": 8
+      },
+      {
+        "tick": 264,
+        "coverage": 0.9944196428571429,
+        "confirmed": 8
+      },
+      {
+        "tick": 276,
+        "coverage": 0.9953497023809523,
+        "confirmed": 8
+      },
+      {
+        "tick": 288,
+        "coverage": 0.9962797619047619,
+        "confirmed": 8
+      },
+      {
+        "tick": 300,
+        "coverage": 0.9983258928571429,
+        "confirmed": 8
+      }
+    ],
+    "evaluation": {
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4013012461044201,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3897082836054621,
+          "radius95": 1.7453454587017574,
+          "firstConfirmedTick": 96,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.412894208603378,
+          "radius95": 1.5972230520316135,
+          "firstConfirmedTick": 99,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.27537940172093706,
+          "radius95": 0.707483336065629,
+          "firstConfirmedTick": 82,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6606279113967131,
+          "radius95": 1.8493877285391704,
+          "firstConfirmedTick": 155,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5454437054471957,
+          "radius95": 1.7221636045005448,
+          "firstConfirmedTick": 50,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.08190621717607718,
+          "radius95": 0.7098777939227527,
+          "firstConfirmedTick": 75,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6323099115230782,
+          "radius95": 1.512493774720436,
+          "firstConfirmedTick": 44,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3007603921585196,
+          "radius95": 0.730878234574648,
+          "firstConfirmedTick": 54,
+          "containsTruth95": true
+        }
+      ]
+    },
+    "scope": "Synthetic static-beacon model. Posterior radii are model-based, not calibrated real-world guarantees."
+  },
+  "verification": {
+    "validPackets": 65,
+    "duration": 60.010666666666665,
+    "crcAndTiming": "PASS"
+  }
+}

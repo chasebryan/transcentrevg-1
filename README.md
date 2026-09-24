@@ -4,6 +4,8 @@ The next generation of **Transhopper**, focused on beacon acquisition and locali
 
 ![TranscentreVG-1 acquisition console](media/TranscentreVG-1.png)
 
+[Watch the TranscentreVG-1 MP4](media/TranscentreVG-1.mp4) — a 60-second, 1080p demonstration with audible packets from the actual VG-1 engine.
+
 ## Run
 
 Requires Node.js 20 or newer. No package installation or external browser dependencies are needed.
@@ -53,6 +55,18 @@ The tests cover localisation, independent confirmation, candidate retention, rec
 Live audio samples delivered observation packets when playback outruns real-time audio. The WAV contains the latest 1,024 captured hop frames, including duplicates and corrupted frames; the interface reports omitted earlier frames. It is a serialised diagnostic capture, not a recording of simultaneous physical radio channels.
 
 See [technical notes](docs/transcentrevg-1.md) for the estimator, planner, wire format, and assumptions, and [verification results](docs/verification.md) for release checks.
+
+## Reproduce the VG-1 video
+
+With Node.js, Python, FFmpeg, and the packages from `requirements.txt` installed:
+
+```sh
+python scripts/render_transcentre_video.py
+```
+
+The renderer runs the actual acquisition engine for 300 steps using seed 73, displays its measurements and estimates across all four bands, and encodes selected received packets as synchronised audible FSK. The presentation interpolates receiver motion between simulation steps. It writes `media/TranscentreVG-1.mp4` and a packet/evaluation manifest at `media/TranscentreVG-1-video.json`.
+
+After encoding, it decodes the MP4's AAC soundtrack and checks that all 65 selected packets retain their bytes, CRC validity, and timing. Use `--work-dir PATH` to retain intermediate snapshots, WAV files, and review stills.
 
 ## Original Transhopper
 

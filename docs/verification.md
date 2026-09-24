@@ -33,3 +33,9 @@ Times include relay delivery. Zero false confirmations in these samples is not a
 A headless Chromium session exercised the served application at widths of 1,440, 390, and 320 pixels. Checks covered run/pause, new missions, relay outage/recovery, depth and candidate selection, JSON export, WAV export, worker decoding, malformed WAV input, invalid seeds, and responsive rendering. No JavaScript errors remained. A transient zero-width canvas during responsive layout was fixed, and narrow candidate cards were changed to a single column.
 
 The browser decoder recovered 478 valid hop frames from the default mission's 120-step capture and all 200 frames of the legacy recording. Audio encoding and decoding were verified numerically; physical speaker/microphone operation, real rotor noise, and other browser engines were not tested. The desktop image in the README is an actual application screenshot.
+
+## TranscentreVG-1 MP4
+
+The VG-1 demonstration is 60 seconds at 1,920 × 1,080, 24 fps, with H.264 video, AAC audio, and fast-start metadata. Its presentation is rendered from 301 snapshots of the actual engine, using seed 73 and 300 mission steps; visual focus selection does not affect the planner. The final run confirms eight synthetic beacons with no false confirmations and a median position error of 0.401 cells.
+
+All 65 selected audible observation frames were recovered from the encoded MP4 soundtrack with byte-for-byte matching, valid CRCs, and onset times within 50 ms of the manifest. The video shows all four depth bands, independent confirmation, adaptive revisits, relay statistics, and the final synthetic evaluation. Review stills were checked for label fit and legibility.
