@@ -1,0 +1,4616 @@
+{
+  "version": "TranscentreVG-1",
+  "config": {
+    "limit": 300,
+    "loss": 0.04,
+    "corruption": 0.01,
+    "outliers": 0.08
+  },
+  "scenario": "8 static beacons; four symbolic depth bands; keyed measurement noise; shared-ID clutter; both planners use the same tracker",
+  "cohorts": {
+    "development": [
+      11,
+      29,
+      47,
+      73,
+      101,
+      137,
+      173,
+      211,
+      251,
+      307,
+      359,
+      419
+    ],
+    "holdout": [
+      503,
+      557,
+      601,
+      653,
+      701,
+      757,
+      809,
+      853,
+      907,
+      953,
+      1009,
+      1061
+    ]
+  },
+  "summaries": {
+    "development": {
+      "coverage": {
+        "missions": 12,
+        "totalBeacons": 96,
+        "detected": 96,
+        "confirmed": 96,
+        "falseConfirmed": 0,
+        "falseEverConfirmed": 0,
+        "confirmationRate": 1,
+        "medianError": 0.39708369396601595,
+        "p90Error": 0.6554423072995598,
+        "medianFirstConfirmation": 83,
+        "meanCoverage": 0.9993179563492064,
+        "contained95": 94
+      },
+      "adaptive": {
+        "missions": 12,
+        "totalBeacons": 96,
+        "detected": 96,
+        "confirmed": 96,
+        "falseConfirmed": 0,
+        "falseEverConfirmed": 0,
+        "confirmationRate": 1,
+        "medianError": 0.3831194669455612,
+        "p90Error": 0.6323099115230782,
+        "medianFirstConfirmation": 70,
+        "meanCoverage": 0.9869791666666666,
+        "contained95": 94
+      }
+    },
+    "holdout": {
+      "coverage": {
+        "missions": 12,
+        "totalBeacons": 96,
+        "detected": 96,
+        "confirmed": 96,
+        "falseConfirmed": 0,
+        "falseEverConfirmed": 0,
+        "confirmationRate": 1,
+        "medianError": 0.4184201638913031,
+        "p90Error": 0.7326040245843327,
+        "medianFirstConfirmation": 81.5,
+        "meanCoverage": 0.9991629464285715,
+        "contained95": 94
+      },
+      "adaptive": {
+        "missions": 12,
+        "totalBeacons": 96,
+        "detected": 96,
+        "confirmed": 96,
+        "falseConfirmed": 0,
+        "falseEverConfirmed": 0,
+        "confirmationRate": 1,
+        "medianError": 0.39663944700769116,
+        "p90Error": 0.7092455362609418,
+        "medianFirstConfirmation": 74.5,
+        "meanCoverage": 0.9886067708333331,
+        "contained95": 95
+      }
+    }
+  },
+  "rows": [
+    {
+      "cohort": "development",
+      "seed": 11,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.3581009795422502,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6006131065278248,
+          "radius95": 1.2578593431857132,
+          "firstConfirmedTick": 53,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.19965835525735914,
+          "radius95": 1.918606381446208,
+          "firstConfirmedTick": 52,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3581633489023666,
+          "radius95": 1.553063483669483,
+          "firstConfirmedTick": 57,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4207671585344074,
+          "radius95": 1.62883802034433,
+          "firstConfirmedTick": 102,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3580386101821338,
+          "radius95": 1.487601998014135,
+          "firstConfirmedTick": 35,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5442475948157698,
+          "radius95": 1.6335983191974064,
+          "firstConfirmedTick": 48,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3390870855487,
+          "radius95": 1.6530728050804742,
+          "firstConfirmedTick": 116,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3207418072517762,
+          "radius95": 0.7071217263588925,
+          "firstConfirmedTick": 80,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9985119047619048
+    },
+    {
+      "cohort": "development",
+      "seed": 11,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4271050978152635,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2906689646444755,
+          "radius95": 0.7071068049330025,
+          "firstConfirmedTick": 49,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4221082157992819,
+          "radius95": 0.7071204349727331,
+          "firstConfirmedTick": 66,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.826042600797783,
+          "radius95": 1.501665579290369,
+          "firstConfirmedTick": 83,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7957774253257015,
+          "radius95": 0.7143010502676743,
+          "firstConfirmedTick": 66,
+          "containsTruth95": false
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.43210197983124515,
+          "radius95": 0.7071242386151416,
+          "firstConfirmedTick": 35,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4504459327429123,
+          "radius95": 2.0571639099460897,
+          "firstConfirmedTick": 100,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.39071414735039234,
+          "radius95": 0.7200266015709885,
+          "firstConfirmedTick": 71,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.31516117759775675,
+          "radius95": 0.7186609997609195,
+          "firstConfirmedTick": 99,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9588913690476191
+    },
+    {
+      "cohort": "development",
+      "seed": 29,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.3913030685398292,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.18919320811176904,
+          "radius95": 1.285450557976521,
+          "firstConfirmedTick": 77,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6119792084927648,
+          "radius95": 1.5384728996464583,
+          "firstConfirmedTick": 83,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4440406787175966,
+          "radius95": 1.3215675143448546,
+          "firstConfirmedTick": 49,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4065076808074561,
+          "radius95": 0.7220586661127132,
+          "firstConfirmedTick": 77,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.33136990326455573,
+          "radius95": 1.8585577120192185,
+          "firstConfirmedTick": 68,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.38903176751657753,
+          "radius95": 1.442333363293959,
+          "firstConfirmedTick": 94,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.39357436956308095,
+          "radius95": 1.4702474008024988,
+          "firstConfirmedTick": 108,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.24045752183935445,
+          "radius95": 0.7219701206103061,
+          "firstConfirmedTick": 91,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9986979166666666
+    },
+    {
+      "cohort": "development",
+      "seed": 29,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4237090649945011,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4098058305384295,
+          "radius95": 0.7161548623969859,
+          "firstConfirmedTick": 50,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.43761229945057273,
+          "radius95": 1.364792062558668,
+          "firstConfirmedTick": 70,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.555305624800268,
+          "radius95": 2.0073394830462283,
+          "firstConfirmedTick": 49,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.21088552493228585,
+          "radius95": 1.2689889439902802,
+          "firstConfirmedTick": 52,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5487144340300214,
+          "radius95": 1.556564581876094,
+          "firstConfirmedTick": 123,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5480394854269756,
+          "radius95": 1.6344118409640997,
+          "firstConfirmedTick": 120,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.26321170200647304,
+          "radius95": 1.2198473231710345,
+          "firstConfirmedTick": 102,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.29826265181560185,
+          "radius95": 1.6246840286115576,
+          "firstConfirmedTick": 170,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9862351190476191
+    },
+    {
+      "cohort": "development",
+      "seed": 47,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.29932700380657873,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.16198075550378213,
+          "radius95": 0.7071158129317684,
+          "firstConfirmedTick": 142,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.07576204160299878,
+          "radius95": 1.6019144719834106,
+          "firstConfirmedTick": 40,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.24938304214716261,
+          "radius95": 1.686777299729068,
+          "firstConfirmedTick": 71,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2034260212036438,
+          "radius95": 0.7486919908878783,
+          "firstConfirmedTick": 64,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4038427796661562,
+          "radius95": 1.5529751874006363,
+          "firstConfirmedTick": 125,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.34960680264798355,
+          "radius95": 1.526492835029952,
+          "firstConfirmedTick": 125,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3492709654659949,
+          "radius95": 0.7075585180992453,
+          "firstConfirmedTick": 70,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3782376425069217,
+          "radius95": 1.3805253578150638,
+          "firstConfirmedTick": 52,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 1
+    },
+    {
+      "cohort": "development",
+      "seed": 47,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.3166852854346481,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4576385005228852,
+          "radius95": 1.3260676045626916,
+          "firstConfirmedTick": 74,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6766776217751432,
+          "radius95": 1.9799071243367412,
+          "firstConfirmedTick": 40,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5351196002370824,
+          "radius95": 1.4139456232694463,
+          "firstConfirmedTick": 46,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.24441847481480533,
+          "radius95": 0.7071477025419911,
+          "firstConfirmedTick": 52,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.13140152765828783,
+          "radius95": 1.5820780791363358,
+          "firstConfirmedTick": 70,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.25757658624846624,
+          "radius95": 1.7881480532261178,
+          "firstConfirmedTick": 73,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3757939846208299,
+          "radius95": 0.7518011131741067,
+          "firstConfirmedTick": 64,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.0696290273033658,
+          "radius95": 0.707154170596005,
+          "firstConfirmedTick": 44,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9841889880952381
+    },
+    {
+      "cohort": "development",
+      "seed": 73,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.3526815457636736,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.42693210571679024,
+          "radius95": 1.459374328058808,
+          "firstConfirmedTick": 98,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.1784308155459717,
+          "radius95": 1.5906043786720532,
+          "firstConfirmedTick": 77,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.278430985810557,
+          "radius95": 0.7107605524543521,
+          "firstConfirmedTick": 76,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5222939041088381,
+          "radius95": 1.5640837468049482,
+          "firstConfirmedTick": 134,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6240154953318735,
+          "radius95": 1.735085160073695,
+          "firstConfirmedTick": 94,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.08468241796426636,
+          "radius95": 0.7071124331878577,
+          "firstConfirmedTick": 108,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6442217266276197,
+          "radius95": 1.7975556717559646,
+          "firstConfirmedTick": 82,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2568260160015905,
+          "radius95": 1.6534684136734215,
+          "firstConfirmedTick": 74,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9973958333333334
+    },
+    {
+      "cohort": "development",
+      "seed": 73,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4013012461044201,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3897082836054621,
+          "radius95": 1.7453454587017574,
+          "firstConfirmedTick": 96,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.412894208603378,
+          "radius95": 1.5972230520316135,
+          "firstConfirmedTick": 99,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.27537940172093706,
+          "radius95": 0.707483336065629,
+          "firstConfirmedTick": 82,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6606279113967131,
+          "radius95": 1.8493877285391704,
+          "firstConfirmedTick": 155,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5454437054471957,
+          "radius95": 1.7221636045005448,
+          "firstConfirmedTick": 50,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.08190621717607718,
+          "radius95": 0.7098777939227527,
+          "firstConfirmedTick": 75,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6323099115230782,
+          "radius95": 1.512493774720436,
+          "firstConfirmedTick": 44,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3007603921585196,
+          "radius95": 0.730878234574648,
+          "firstConfirmedTick": 54,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9983258928571429
+    },
+    {
+      "cohort": "development",
+      "seed": 101,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.5031457135056399,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2746952708904778,
+          "radius95": 1.7022502487038826,
+          "firstConfirmedTick": 219,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.9789218445859197,
+          "radius95": 0.7147361675802525,
+          "firstConfirmedTick": 56,
+          "containsTruth95": false
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.47313502479182,
+          "radius95": 1.5113463806869463,
+          "firstConfirmedTick": 121,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.28708643343547496,
+          "radius95": 1.540393362909177,
+          "firstConfirmedTick": 121,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5822735923742319,
+          "radius95": 0.7108732074761637,
+          "firstConfirmedTick": 70,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.40492389046446337,
+          "radius95": 0.7307483471074082,
+          "firstConfirmedTick": 81,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5331564022194598,
+          "radius95": 1.622291871276595,
+          "firstConfirmedTick": 99,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6216745838474894,
+          "radius95": 1.3811503835539862,
+          "firstConfirmedTick": 66,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 1
+    },
+    {
+      "cohort": "development",
+      "seed": 101,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.5278034481976808,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5404660941606025,
+          "radius95": 0.7110480834065356,
+          "firstConfirmedTick": 131,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.22164949899844033,
+          "radius95": 0.7071837965929266,
+          "firstConfirmedTick": 45,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5151408022347589,
+          "radius95": 1.6338128977055995,
+          "firstConfirmedTick": 70,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5632373650601952,
+          "radius95": 0.718525426035083,
+          "firstConfirmedTick": 64,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5502671335098528,
+          "radius95": 1.6582831408445304,
+          "firstConfirmedTick": 103,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4341405071194175,
+          "radius95": 1.4905614010194848,
+          "firstConfirmedTick": 57,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5502575903644121,
+          "radius95": 1.616953856936338,
+          "firstConfirmedTick": 53,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2646809414005051,
+          "radius95": 1.8572141376586222,
+          "firstConfirmedTick": 67,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9975818452380952
+    },
+    {
+      "cohort": "development",
+      "seed": 137,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.3664310530272506,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.34510662720534285,
+          "radius95": 1.3652279204026503,
+          "firstConfirmedTick": 67,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.35616482839313274,
+          "radius95": 0.7315582691137587,
+          "firstConfirmedTick": 94,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5932081297183912,
+          "radius95": 0.7536403761035233,
+          "firstConfirmedTick": 90,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.37669727766136846,
+          "radius95": 0.7072343743143898,
+          "firstConfirmedTick": 72,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.33874145676855993,
+          "radius95": 1.5934068678664872,
+          "firstConfirmedTick": 58,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.47344625742026064,
+          "radius95": 1.6473214415424335,
+          "firstConfirmedTick": 90,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5270723686390779,
+          "radius95": 1.5063231667542594,
+          "firstConfirmedTick": 80,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.17525814981119933,
+          "radius95": 1.629319792843044,
+          "firstConfirmedTick": 53,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9996279761904762
+    },
+    {
+      "cohort": "development",
+      "seed": 137,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.3697673736049498,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3244200908497657,
+          "radius95": 0.7072518372177472,
+          "firstConfirmedTick": 112,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3725365150447454,
+          "radius95": 1.6276438564049511,
+          "firstConfirmedTick": 48,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3669982321651542,
+          "radius95": 1.6443841765343963,
+          "firstConfirmedTick": 73,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3765306502856603,
+          "radius95": 0.7073903999601875,
+          "firstConfirmedTick": 53,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4241691988974719,
+          "radius95": 1.515640261167113,
+          "firstConfirmedTick": 70,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4571620076583308,
+          "radius95": 1.696733899660714,
+          "firstConfirmedTick": 100,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3661034477285358,
+          "radius95": 1.4765443613623073,
+          "firstConfirmedTick": 55,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.20922682438606166,
+          "radius95": 1.3838132609382918,
+          "firstConfirmedTick": 69,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9845610119047619
+    },
+    {
+      "cohort": "development",
+      "seed": 173,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.39032892044132367,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6073950799684465,
+          "radius95": 1.6597087494299165,
+          "firstConfirmedTick": 248,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2331964674728822,
+          "radius95": 1.6382159045247713,
+          "firstConfirmedTick": 171,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2867001468735484,
+          "radius95": 0.7155296068890803,
+          "firstConfirmedTick": 114,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3402626108901622,
+          "radius95": 1.8547180750796524,
+          "firstConfirmedTick": 170,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.1959178919224603,
+          "radius95": 0.7075009426474852,
+          "firstConfirmedTick": 75,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5578015400621766,
+          "radius95": 1.478714482381835,
+          "firstConfirmedTick": 36,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4525850024518564,
+          "radius95": 1.6253395443322178,
+          "firstConfirmedTick": 86,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.44039522999248515,
+          "radius95": 1.3737539494521442,
+          "firstConfirmedTick": 53,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9996279761904762
+    },
+    {
+      "cohort": "development",
+      "seed": 173,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.28057475452741243,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.31879686742723495,
+          "radius95": 1.2390118279177873,
+          "firstConfirmedTick": 267,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3315867544159102,
+          "radius95": 1.639640786710928,
+          "firstConfirmedTick": 39,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.17840652046384017,
+          "radius95": 1.3836167078430417,
+          "firstConfirmedTick": 51,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6541647202307738,
+          "radius95": 1.2414904327964722,
+          "firstConfirmedTick": 66,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.1958114715918694,
+          "radius95": 0.7072751781723015,
+          "firstConfirmedTick": 131,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.06293102920895591,
+          "radius95": 1.5258507100457952,
+          "firstConfirmedTick": 36,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4800121322867963,
+          "radius95": 0.7086190827629966,
+          "firstConfirmedTick": 91,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.24235264162758988,
+          "radius95": 1.7071545941159552,
+          "firstConfirmedTick": 48,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9791666666666666
+    },
+    {
+      "cohort": "development",
+      "seed": 211,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.3508946421949121,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.29336108845749725,
+          "radius95": 0.7206768718905443,
+          "firstConfirmedTick": 77,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.22336791936891545,
+          "radius95": 1.6719954686509935,
+          "firstConfirmedTick": 75,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6360514254191802,
+          "radius95": 1.670318921663534,
+          "firstConfirmedTick": 74,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3439451925005781,
+          "radius95": 0.7186779076826276,
+          "firstConfirmedTick": 69,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.8511973510017857,
+          "radius95": 0.7399220707526815,
+          "firstConfirmedTick": 35,
+          "containsTruth95": false
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6255146733061477,
+          "radius95": 1.6662256870141539,
+          "firstConfirmedTick": 75,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.32014212329631414,
+          "radius95": 0.7434466833752219,
+          "firstConfirmedTick": 73,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.35784409188924615,
+          "radius95": 1.6915588996027346,
+          "firstConfirmedTick": 116,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9998139880952381
+    },
+    {
+      "cohort": "development",
+      "seed": 211,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.33847503124835643,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.37423025701406226,
+          "radius95": 1.2964943226078973,
+          "firstConfirmedTick": 29,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2631566446057062,
+          "radius95": 1.6429120915750164,
+          "firstConfirmedTick": 50,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.34001621002823634,
+          "radius95": 0.7071686955166477,
+          "firstConfirmedTick": 40,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3545627934592069,
+          "radius95": 0.707205421054663,
+          "firstConfirmedTick": 57,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6572496040792764,
+          "radius95": 1.4451302143405287,
+          "firstConfirmedTick": 50,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.33693385246847646,
+          "radius95": 0.7087391120497589,
+          "firstConfirmedTick": 63,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3203878192019428,
+          "radius95": 0.7073849867137328,
+          "firstConfirmedTick": 176,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.32687539243902086,
+          "radius95": 0.7241182671441657,
+          "firstConfirmedTick": 53,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.984375
+    },
+    {
+      "cohort": "development",
+      "seed": 251,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.436262262254851,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3494545141898305,
+          "radius95": 1.5856274805860315,
+          "firstConfirmedTick": 158,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.25398651411842216,
+          "radius95": 1.7049829633484619,
+          "firstConfirmedTick": 104,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.45121743491660754,
+          "radius95": 0.7071102247808982,
+          "firstConfirmedTick": 120,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.43106078563020067,
+          "radius95": 0.7286755753076585,
+          "firstConfirmedTick": 168,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6554423072995598,
+          "radius95": 1.4731475958222995,
+          "firstConfirmedTick": 120,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7932689069601349,
+          "radius95": 1.665148191846478,
+          "firstConfirmedTick": 143,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.13575080772020157,
+          "radius95": 1.6541712697672777,
+          "firstConfirmedTick": 137,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4414637388795013,
+          "radius95": 0.7102998240280469,
+          "firstConfirmedTick": 124,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9996279761904762
+    },
+    {
+      "cohort": "development",
+      "seed": 251,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4464529544919773,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.45040103059619396,
+          "radius95": 0.7109623592265824,
+          "firstConfirmedTick": 52,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.24858774365335312,
+          "radius95": 0.7073753575025222,
+          "firstConfirmedTick": 70,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4425048783877607,
+          "radius95": 0.7166701310785525,
+          "firstConfirmedTick": 98,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.47546045270324566,
+          "radius95": 1.5411452516356594,
+          "firstConfirmedTick": 229,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.124931258793485,
+          "radius95": 0.7296858378628426,
+          "firstConfirmedTick": 124,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5278221934526731,
+          "radius95": 1.8104217312022697,
+          "firstConfirmedTick": 287,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.27636884912742726,
+          "radius95": 1.7317481893475999,
+          "firstConfirmedTick": 217,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5243793844143348,
+          "radius95": 1.5964172691963776,
+          "firstConfirmedTick": 74,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9910714285714286
+    },
+    {
+      "cohort": "development",
+      "seed": 307,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.46995327870932013,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.9015392449372509,
+          "radius95": 1.8610006749109052,
+          "firstConfirmedTick": 171,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.48553992930093265,
+          "radius95": 1.610436497648714,
+          "firstConfirmedTick": 52,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6919908760417642,
+          "radius95": 0.754505790774016,
+          "firstConfirmedTick": 64,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.20386217848655488,
+          "radius95": 1.7959003700647336,
+          "firstConfirmedTick": 237,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.10491337581615011,
+          "radius95": 0.715137457825105,
+          "firstConfirmedTick": 100,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.1369858961536928,
+          "radius95": 0.7071074453304428,
+          "firstConfirmedTick": 83,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.8503095259740051,
+          "radius95": 1.657847726430235,
+          "firstConfirmedTick": 201,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4543666281177076,
+          "radius95": 0.7096530694531454,
+          "firstConfirmedTick": 137,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 1
+    },
+    {
+      "cohort": "development",
+      "seed": 307,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4576412042963962,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.45842627264435815,
+          "radius95": 1.6302725007709489,
+          "firstConfirmedTick": 217,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5464445316919749,
+          "radius95": 0.7100092543332613,
+          "firstConfirmedTick": 45,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.31093570244482105,
+          "radius95": 1.6255887400323414,
+          "firstConfirmedTick": 107,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3021999769833726,
+          "radius95": 1.784257658341418,
+          "firstConfirmedTick": 253,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 1.1940404885750235,
+          "radius95": 1.550307641620172,
+          "firstConfirmedTick": 107,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.12004776562160605,
+          "radius95": 1.6480783771746044,
+          "firstConfirmedTick": 89,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.47523196051842564,
+          "radius95": 0.7222304906995773,
+          "firstConfirmedTick": 92,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4568561359484342,
+          "radius95": 0.7071136314554741,
+          "firstConfirmedTick": 198,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9927455357142857
+    },
+    {
+      "cohort": "development",
+      "seed": 359,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.482566777251157,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 1.1109970684892183,
+          "radius95": 1.6755569387064422,
+          "firstConfirmedTick": 103,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5622471370360107,
+          "radius95": 1.5672529293807207,
+          "firstConfirmedTick": 46,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.575621665114327,
+          "radius95": 1.5235651642718173,
+          "firstConfirmedTick": 128,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.36403989788174695,
+          "radius95": 0.7119240734780955,
+          "firstConfirmedTick": 125,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.31705427011393394,
+          "radius95": 1.400568802586816,
+          "firstConfirmedTick": 75,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6825255295030712,
+          "radius95": 0.7088035557902997,
+          "firstConfirmedTick": 44,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.152324682222752,
+          "radius95": 0.7081108381605814,
+          "firstConfirmedTick": 122,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.40288641746630327,
+          "radius95": 1.261354695710954,
+          "firstConfirmedTick": 99,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9992559523809523
+    },
+    {
+      "cohort": "development",
+      "seed": 359,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.37945771333536404,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.25757114837472445,
+          "radius95": 1.647931472560696,
+          "firstConfirmedTick": 41,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2876516778043952,
+          "radius95": 1.5373182484474535,
+          "firstConfirmedTick": 68,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.39089722071251287,
+          "radius95": 1.6571441149158415,
+          "firstConfirmedTick": 69,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.36801820595821516,
+          "radius95": 0.7071089548699748,
+          "firstConfirmedTick": 54,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.10379237876342758,
+          "radius95": 0.7629347669594034,
+          "firstConfirmedTick": 189,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.9326682799190739,
+          "radius95": 1.6621753032641258,
+          "firstConfirmedTick": 45,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5475405132011903,
+          "radius95": 1.758613332488404,
+          "firstConfirmedTick": 73,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.8720004612872325,
+          "radius95": 0.7195440959138,
+          "firstConfirmedTick": 86,
+          "containsTruth95": false
+        }
+      ],
+      "coverage": 0.9867931547619048
+    },
+    {
+      "cohort": "development",
+      "seed": 419,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4745200526417621,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3709311376830826,
+          "radius95": 1.268065605389199,
+          "firstConfirmedTick": 39,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.49210148560223216,
+          "radius95": 1.2416277560877633,
+          "firstConfirmedTick": 98,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5606496187339197,
+          "radius95": 0.7072844079300933,
+          "firstConfirmedTick": 95,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.400593018368951,
+          "radius95": 1.868963598565034,
+          "firstConfirmedTick": 69,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5643198319982434,
+          "radius95": 1.6374365101242816,
+          "firstConfirmedTick": 91,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4569386196812921,
+          "radius95": 0.7251340279706499,
+          "firstConfirmedTick": 39,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7132099474238912,
+          "radius95": 0.7303981478362096,
+          "firstConfirmedTick": 90,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.39320936304832255,
+          "radius95": 0.7213398566479609,
+          "firstConfirmedTick": 75,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9992559523809523
+    },
+    {
+      "cohort": "development",
+      "seed": 419,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.3257937438245837,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2527444909570619,
+          "radius95": 1.3733208621951025,
+          "firstConfirmedTick": 39,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3988429966921055,
+          "radius95": 1.612386233737821,
+          "firstConfirmedTick": 100,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6118003358818754,
+          "radius95": 1.5113290446661551,
+          "firstConfirmedTick": 168,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.07324467343435857,
+          "radius95": 1.305968878018886,
+          "firstConfirmedTick": 144,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4421223601342167,
+          "radius95": 1.4812478982911939,
+          "firstConfirmedTick": 204,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.42633934289346676,
+          "radius95": 1.6557549006116878,
+          "firstConfirmedTick": 36,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.15688300590558324,
+          "radius95": 1.8454257420437727,
+          "firstConfirmedTick": 97,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.13192926408580602,
+          "radius95": 1.2157366297974987,
+          "firstConfirmedTick": 53,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9998139880952381
+    },
+    {
+      "cohort": "holdout",
+      "seed": 503,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4740711164729827,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.1781053128518436,
+          "radius95": 0.714465233677471,
+          "firstConfirmedTick": 90,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.1913570059444651,
+          "radius95": 1.344608654993586,
+          "firstConfirmedTick": 61,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 1.0954858827859302,
+          "radius95": 1.5548485773495337,
+          "firstConfirmedTick": 107,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5248816571537152,
+          "radius95": 1.6730837238658265,
+          "firstConfirmedTick": 117,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.23388478671687168,
+          "radius95": 1.2644785019756686,
+          "firstConfirmedTick": 146,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5687713886416355,
+          "radius95": 0.7090878460566444,
+          "firstConfirmedTick": 176,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7006720384488188,
+          "radius95": 1.505052660303384,
+          "firstConfirmedTick": 114,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4232605757922503,
+          "radius95": 0.7071356876836931,
+          "firstConfirmedTick": 130,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9994419642857143
+    },
+    {
+      "cohort": "holdout",
+      "seed": 503,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.3778795879814684,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.17609943106796916,
+          "radius95": 0.7176242575334313,
+          "firstConfirmedTick": 40,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.26639702030324164,
+          "radius95": 1.6390261699620332,
+          "firstConfirmedTick": 73,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.17524731968809631,
+          "radius95": 2.0374453272617385,
+          "firstConfirmedTick": 70,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5843249543566365,
+          "radius95": 1.8917562029437183,
+          "firstConfirmedTick": 125,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4401561355607809,
+          "radius95": 1.4874249733910316,
+          "firstConfirmedTick": 48,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4643551636795038,
+          "radius95": 0.7242212001416316,
+          "firstConfirmedTick": 81,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4713396460494885,
+          "radius95": 1.8919579421785557,
+          "firstConfirmedTick": 53,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3156030404021559,
+          "radius95": 1.499378978806067,
+          "firstConfirmedTick": 98,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9925595238095238
+    },
+    {
+      "cohort": "holdout",
+      "seed": 557,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.36854441737029686,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4065544853636712,
+          "radius95": 0.7279440388969478,
+          "firstConfirmedTick": 95,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.05936977385364562,
+          "radius95": 1.5033008291485679,
+          "firstConfirmedTick": 79,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6816446257420061,
+          "radius95": 1.460339047848778,
+          "firstConfirmedTick": 64,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7453026854300075,
+          "radius95": 1.8286766565401367,
+          "firstConfirmedTick": 197,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.33053434937692244,
+          "radius95": 2.018699563180641,
+          "firstConfirmedTick": 50,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2852631363901026,
+          "radius95": 0.7119176965213582,
+          "firstConfirmedTick": 57,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.589730603668457,
+          "radius95": 1.5941788867363464,
+          "firstConfirmedTick": 86,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.27138699747821904,
+          "radius95": 0.7465426906837925,
+          "firstConfirmedTick": 59,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 1
+    },
+    {
+      "cohort": "holdout",
+      "seed": 557,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.3439705030930296,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7270610477426499,
+          "radius95": 1.592735973432366,
+          "firstConfirmedTick": 166,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5596191482065859,
+          "radius95": 0.7299544528480513,
+          "firstConfirmedTick": 73,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.30826427249383814,
+          "radius95": 0.7182471460628184,
+          "firstConfirmedTick": 74,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.14313329777872177,
+          "radius95": 1.3718271301476832,
+          "firstConfirmedTick": 65,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3796767336922211,
+          "radius95": 1.6547711266862661,
+          "firstConfirmedTick": 56,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.29044644616381626,
+          "radius95": 0.7084842752645993,
+          "firstConfirmedTick": 69,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.46875294201658385,
+          "radius95": 1.5770070237606042,
+          "firstConfirmedTick": 106,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.29853506705921456,
+          "radius95": 0.7079793739007606,
+          "firstConfirmedTick": 72,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9957217261904762
+    },
+    {
+      "cohort": "holdout",
+      "seed": 601,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.42086065618114377,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6342911190000015,
+          "radius95": 1.6599472293128388,
+          "firstConfirmedTick": 124,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.42063461035772076,
+          "radius95": 1.4232242663349672,
+          "firstConfirmedTick": 141,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.42108670200456677,
+          "radius95": 1.7625242814594482,
+          "firstConfirmedTick": 77,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.40680943358612426,
+          "radius95": 0.7261305430950202,
+          "firstConfirmedTick": 64,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3326781004918937,
+          "radius95": 0.7075254348836721,
+          "firstConfirmedTick": 122,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5560465853328199,
+          "radius95": 0.7469689245213147,
+          "firstConfirmedTick": 106,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7888829038589659,
+          "radius95": 1.6028065474218938,
+          "firstConfirmedTick": 100,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.37027576059029205,
+          "radius95": 1.6890651490391828,
+          "firstConfirmedTick": 71,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9992559523809523
+    },
+    {
+      "cohort": "holdout",
+      "seed": 601,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4973960996730592,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 1.006261216181862,
+          "radius95": 0.7381031660154892,
+          "firstConfirmedTick": 136,
+          "containsTruth95": false
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5970179720390145,
+          "radius95": 0.7367741085559165,
+          "firstConfirmedTick": 195,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.1978379921867409,
+          "radius95": 0.7072174955192642,
+          "firstConfirmedTick": 74,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7789486973707037,
+          "radius95": 1.3776149353089404,
+          "firstConfirmedTick": 64,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.0812115193346031,
+          "radius95": 1.2993567394207024,
+          "firstConfirmedTick": 119,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3977742273071038,
+          "radius95": 0.7137929159642542,
+          "firstConfirmedTick": 112,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7256216803068093,
+          "radius95": 1.7068850183730246,
+          "firstConfirmedTick": 165,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.249385462234303,
+          "radius95": 2.0486687437985593,
+          "firstConfirmedTick": 60,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9838169642857143
+    },
+    {
+      "cohort": "holdout",
+      "seed": 653,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.6024077894333606,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7492884821910799,
+          "radius95": 1.6321322472153184,
+          "firstConfirmedTick": 52,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.1276166969223578,
+          "radius95": 1.5594297396360681,
+          "firstConfirmedTick": 70,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5906724714072483,
+          "radius95": 0.7279849427882512,
+          "firstConfirmedTick": 69,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.838686951044205,
+          "radius95": 1.6191862505837906,
+          "firstConfirmedTick": 88,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7326040245843327,
+          "radius95": 1.8310224298728306,
+          "firstConfirmedTick": 81,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.614143107459473,
+          "radius95": 0.757568898579925,
+          "firstConfirmedTick": 251,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3938106221695481,
+          "radius95": 0.7099838623852371,
+          "firstConfirmedTick": 99,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.07348076852434084,
+          "radius95": 1.6134556963583138,
+          "firstConfirmedTick": 53,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 1
+    },
+    {
+      "cohort": "holdout",
+      "seed": 653,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.43258084304084654,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6509238108013075,
+          "radius95": 0.709737062020011,
+          "firstConfirmedTick": 58,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6928843946579576,
+          "radius95": 0.752422725995656,
+          "firstConfirmedTick": 58,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4429233983644524,
+          "radius95": 1.4762501802953976,
+          "firstConfirmedTick": 69,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5612623723630041,
+          "radius95": 0.707166294443257,
+          "firstConfirmedTick": 88,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4222382877172407,
+          "radius95": 0.7071212337587035,
+          "firstConfirmedTick": 44,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3280179416736794,
+          "radius95": 1.6666715196640174,
+          "firstConfirmedTick": 75,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.39550466670827855,
+          "radius95": 0.7075831299429479,
+          "firstConfirmedTick": 73,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3725720713138318,
+          "radius95": 1.4183069582081123,
+          "firstConfirmedTick": 51,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9581473214285714
+    },
+    {
+      "cohort": "holdout",
+      "seed": 701,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.44269635699342547,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.25045921032602025,
+          "radius95": 1.7219908504147363,
+          "firstConfirmedTick": 104,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6241551699899671,
+          "radius95": 0.7454294458508383,
+          "firstConfirmedTick": 69,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3259307464489365,
+          "radius95": 0.707127524405039,
+          "firstConfirmedTick": 70,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.748511896132442,
+          "radius95": 1.6540028783795928,
+          "firstConfirmedTick": 90,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.29741785337517185,
+          "radius95": 1.555472055091288,
+          "firstConfirmedTick": 150,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.46356537961612626,
+          "radius95": 1.5684371642954238,
+          "firstConfirmedTick": 94,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 1.3887799396759122,
+          "radius95": 1.8117901661639775,
+          "firstConfirmedTick": 56,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4218273343707246,
+          "radius95": 1.5902150042481469,
+          "firstConfirmedTick": 53,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9998139880952381
+    },
+    {
+      "cohort": "holdout",
+      "seed": 701,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4212660678854916,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.38403637864305173,
+          "radius95": 1.2357442574019606,
+          "firstConfirmedTick": 57,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6558664098826941,
+          "radius95": 0.712287736131479,
+          "firstConfirmedTick": 66,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2492263586958289,
+          "radius95": 1.5998448134986294,
+          "firstConfirmedTick": 82,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6841976548019066,
+          "radius95": 0.7114807740215442,
+          "firstConfirmedTick": 109,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.45849575712793145,
+          "radius95": 1.9029397437097653,
+          "firstConfirmedTick": 101,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7092455362609418,
+          "radius95": 1.3976434307558854,
+          "firstConfirmedTick": 129,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.19401428071560936,
+          "radius95": 1.6301073927412835,
+          "firstConfirmedTick": 70,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.37582278001850533,
+          "radius95": 0.7071114249975972,
+          "firstConfirmedTick": 50,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9767485119047619
+    },
+    {
+      "cohort": "holdout",
+      "seed": 757,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.3587190402490816,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4089257095969966,
+          "radius95": 0.7071365338421483,
+          "firstConfirmedTick": 59,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5128006976017779,
+          "radius95": 0.7383588922326543,
+          "firstConfirmedTick": 129,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6301130242096236,
+          "radius95": 0.707617260596041,
+          "firstConfirmedTick": 57,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.271658780810305,
+          "radius95": 0.7517785129365152,
+          "firstConfirmedTick": 125,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4162057174248854,
+          "radius95": 0.7073023649791881,
+          "firstConfirmedTick": 41,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.30851237090116657,
+          "radius95": 0.7076578130774659,
+          "firstConfirmedTick": 62,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.271314087008691,
+          "radius95": 0.7077704253493615,
+          "firstConfirmedTick": 93,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2739511950776123,
+          "radius95": 1.6023569284380499,
+          "firstConfirmedTick": 257,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9994419642857143
+    },
+    {
+      "cohort": "holdout",
+      "seed": 757,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4635201407366273,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4024954159083485,
+          "radius95": 0.719122202934117,
+          "firstConfirmedTick": 73,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.28877779912762247,
+          "radius95": 1.8632204679014093,
+          "firstConfirmedTick": 48,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.8122661240296873,
+          "radius95": 1.6537132453288983,
+          "firstConfirmedTick": 79,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7708731812122388,
+          "radius95": 1.6309085591290011,
+          "firstConfirmedTick": 57,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4905954569080832,
+          "radius95": 1.6039045789517763,
+          "firstConfirmedTick": 41,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.19448899639391376,
+          "radius95": 1.5919793685456982,
+          "firstConfirmedTick": 64,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5819221805889966,
+          "radius95": 1.4157648624433232,
+          "firstConfirmedTick": 202,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.43644482456517136,
+          "radius95": 1.525741127989569,
+          "firstConfirmedTick": 121,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9996279761904762
+    },
+    {
+      "cohort": "holdout",
+      "seed": 809,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.34087158399884565,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3316559120880243,
+          "radius95": 1.663038144217229,
+          "firstConfirmedTick": 82,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.61565453369833,
+          "radius95": 1.6166115618622379,
+          "firstConfirmedTick": 78,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.35008725590966705,
+          "radius95": 1.3402862493651913,
+          "firstConfirmedTick": 120,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.15821966836203982,
+          "radius95": 1.8699747124044594,
+          "firstConfirmedTick": 79,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2906680043598081,
+          "radius95": 0.7075035146813187,
+          "firstConfirmedTick": 50,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.1487835577476854,
+          "radius95": 1.5891325245211483,
+          "firstConfirmedTick": 45,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4257790015396014,
+          "radius95": 1.52890045652871,
+          "firstConfirmedTick": 86,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.8425324801161653,
+          "radius95": 0.7235282981587285,
+          "firstConfirmedTick": 59,
+          "containsTruth95": false
+        }
+      ],
+      "coverage": 0.9996279761904762
+    },
+    {
+      "cohort": "holdout",
+      "seed": 809,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.5957177355630155,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6722500945828034,
+          "radius95": 0.7159087241630809,
+          "firstConfirmedTick": 52,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6721730311254726,
+          "radius95": 1.604956206424213,
+          "firstConfirmedTick": 45,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4395973777144027,
+          "radius95": 1.2707634519553521,
+          "firstConfirmedTick": 73,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3611479529458345,
+          "radius95": 0.7099334113163385,
+          "firstConfirmedTick": 51,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.148113336641808,
+          "radius95": 1.4912788236339023,
+          "firstConfirmedTick": 57,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6214725007395857,
+          "radius95": 1.708584058855541,
+          "firstConfirmedTick": 90,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.9252330124192492,
+          "radius95": 1.7833585333172506,
+          "firstConfirmedTick": 130,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5699629703864454,
+          "radius95": 0.7092521358559403,
+          "firstConfirmedTick": 46,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9946056547619048
+    },
+    {
+      "cohort": "holdout",
+      "seed": 853,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.2315042673411949,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.043008833549875156,
+          "radius95": 1.6311845801265004,
+          "firstConfirmedTick": 166,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.633532332737227,
+          "radius95": 1.6565651746973251,
+          "firstConfirmedTick": 111,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.18696213407457726,
+          "radius95": 0.7111587716414354,
+          "firstConfirmedTick": 113,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5523153121149081,
+          "radius95": 1.2482627565445537,
+          "firstConfirmedTick": 67,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.0980082978610135,
+          "radius95": 1.2453318278399705,
+          "firstConfirmedTick": 90,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2521273674766701,
+          "radius95": 1.7868722061204303,
+          "firstConfirmedTick": 127,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3623421707583076,
+          "radius95": 1.322419391458334,
+          "firstConfirmedTick": 80,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.21088116720571973,
+          "radius95": 1.6406202552586722,
+          "firstConfirmedTick": 157,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9953497023809523
+    },
+    {
+      "cohort": "holdout",
+      "seed": 853,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.24479742872367902,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.11933650576255196,
+          "radius95": 0.7071209693008059,
+          "firstConfirmedTick": 119,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.21622768530425052,
+          "radius95": 1.299907431277239,
+          "firstConfirmedTick": 136,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.19003471490262797,
+          "radius95": 0.7071553177816394,
+          "firstConfirmedTick": 101,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3754486539952866,
+          "radius95": 1.664550641976143,
+          "firstConfirmedTick": 47,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.12073821863156382,
+          "radius95": 1.291736835700835,
+          "firstConfirmedTick": 90,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3693217522184464,
+          "radius95": 1.5127568912741647,
+          "firstConfirmedTick": 84,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2733671721431075,
+          "radius95": 1.4635658466547996,
+          "firstConfirmedTick": 88,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2990787897810081,
+          "radius95": 1.24222846279394,
+          "firstConfirmedTick": 121,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9996279761904762
+    },
+    {
+      "cohort": "holdout",
+      "seed": 907,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4136560924223077,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5793619376762692,
+          "radius95": 1.7233032056002786,
+          "firstConfirmedTick": 100,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4294573102163441,
+          "radius95": 0.7075520061392567,
+          "firstConfirmedTick": 65,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6026051217717321,
+          "radius95": 1.805483712507168,
+          "firstConfirmedTick": 172,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4246885792860175,
+          "radius95": 1.6636384030272515,
+          "firstConfirmedTick": 97,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.2691888062314455,
+          "radius95": 0.7480512625145306,
+          "firstConfirmedTick": 35,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.17236730336425746,
+          "radius95": 1.5770030635791832,
+          "firstConfirmedTick": 29,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3391195619543938,
+          "radius95": 0.7071166274436806,
+          "firstConfirmedTick": 53,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4026236055585979,
+          "radius95": 1.590526369972379,
+          "firstConfirmedTick": 75,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9994419642857143
+    },
+    {
+      "cohort": "holdout",
+      "seed": 907,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.3345852871176079,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.25912046665564603,
+          "radius95": 1.2521579796737559,
+          "firstConfirmedTick": 45,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4301672576875159,
+          "radius95": 0.707876917316363,
+          "firstConfirmedTick": 100,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.23306729942995225,
+          "radius95": 1.957719446610346,
+          "firstConfirmedTick": 229,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4798933483526414,
+          "radius95": 0.7087624835020725,
+          "firstConfirmedTick": 121,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.35249248434732555,
+          "radius95": 0.7500188618134443,
+          "firstConfirmedTick": 47,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.28258757271112805,
+          "radius95": 1.4430123808614734,
+          "firstConfirmedTick": 45,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.33912815203580576,
+          "radius95": 0.7071072391345317,
+          "firstConfirmedTick": 48,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.33004242219941,
+          "radius95": 1.5430417236343028,
+          "firstConfirmedTick": 124,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9947916666666666
+    },
+    {
+      "cohort": "holdout",
+      "seed": 953,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4356165957920723,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6418767370705187,
+          "radius95": 1.6208906287217537,
+          "firstConfirmedTick": 70,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.33675213556708933,
+          "radius95": 1.6300854684826231,
+          "firstConfirmedTick": 70,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4469391087334292,
+          "radius95": 1.652412894870174,
+          "firstConfirmedTick": 70,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7262318009067266,
+          "radius95": 1.64775187000667,
+          "firstConfirmedTick": 67,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.13714279337543794,
+          "radius95": 1.422794563147447,
+          "firstConfirmedTick": 75,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4242940828507154,
+          "radius95": 0.7088137685947004,
+          "firstConfirmedTick": 100,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6421633867243307,
+          "radius95": 0.7117604142135517,
+          "firstConfirmedTick": 48,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3480095308782787,
+          "radius95": 0.707119914953963,
+          "firstConfirmedTick": 87,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9977678571428571
+    },
+    {
+      "cohort": "holdout",
+      "seed": 953,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.5119727312850102,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6068238700810517,
+          "radius95": 1.5302023522346149,
+          "firstConfirmedTick": 126,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4171215924889688,
+          "radius95": 1.6595517479588506,
+          "firstConfirmedTick": 99,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.26317035948803574,
+          "radius95": 1.235305151351032,
+          "firstConfirmedTick": 125,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6825211953330279,
+          "radius95": 0.7073228895666372,
+          "firstConfirmedTick": 101,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.7532437157798454,
+          "radius95": 1.6599671940602019,
+          "firstConfirmedTick": 95,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.41472373978639904,
+          "radius95": 0.7162203966262738,
+          "firstConfirmedTick": 80,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.35108086029952,
+          "radius95": 0.7095837708672236,
+          "firstConfirmedTick": 49,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.8390411414162912,
+          "radius95": 1.4858489389844307,
+          "firstConfirmedTick": 109,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9884672619047619
+    },
+    {
+      "cohort": "holdout",
+      "seed": 1009,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4392272096440609,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4474946696779956,
+          "radius95": 0.7256580462306694,
+          "firstConfirmedTick": 52,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5645207066306552,
+          "radius95": 0.7085811322151803,
+          "firstConfirmedTick": 104,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6139113991732863,
+          "radius95": 1.330920206098265,
+          "firstConfirmedTick": 53,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.11444178001599255,
+          "radius95": 1.624336098594036,
+          "firstConfirmedTick": 75,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5892892083773306,
+          "radius95": 1.6057727886057123,
+          "firstConfirmedTick": 125,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.37109957788755754,
+          "radius95": 0.7349133654846031,
+          "firstConfirmedTick": 176,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.4309597496101263,
+          "radius95": 1.5675657024424423,
+          "firstConfirmedTick": 47,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.42762497023126816,
+          "radius95": 1.32824112233293,
+          "firstConfirmedTick": 53,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 1
+    },
+    {
+      "cohort": "holdout",
+      "seed": 1009,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.4056176242576154,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.10641828662027465,
+          "radius95": 1.303951595271614,
+          "firstConfirmedTick": 52,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6389520498653765,
+          "radius95": 1.9065880415348593,
+          "firstConfirmedTick": 68,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.26580225579820355,
+          "radius95": 0.7071067952370961,
+          "firstConfirmedTick": 54,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.0307424848925335,
+          "radius95": 0.7071087744635259,
+          "firstConfirmedTick": 48,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6512566668471846,
+          "radius95": 0.7386592388471946,
+          "firstConfirmedTick": 115,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5454329927170272,
+          "radius95": 2.185548263501202,
+          "firstConfirmedTick": 219,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.1827628138275469,
+          "radius95": 1.3782651385525937,
+          "firstConfirmedTick": 99,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5777764305045902,
+          "radius95": 1.5498397490669071,
+          "firstConfirmedTick": 74,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9912574404761905
+    },
+    {
+      "cohort": "holdout",
+      "seed": 1061,
+      "mode": "coverage",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.3556396807483282,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.24075374063651173,
+          "radius95": 0.7088194753597264,
+          "firstConfirmedTick": 52,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.400576808706972,
+          "radius95": 1.5681229363916458,
+          "firstConfirmedTick": 104,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3107025527896844,
+          "radius95": 0.7074207354652952,
+          "firstConfirmedTick": 120,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 1.0161415674985943,
+          "radius95": 0.7453214251581105,
+          "firstConfirmedTick": 172,
+          "containsTruth95": false
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.057884574491062706,
+          "radius95": 0.7239456658204082,
+          "firstConfirmedTick": 155,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5684244060032001,
+          "radius95": 0.7093517242904436,
+          "firstConfirmedTick": 44,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5636505428498223,
+          "radius95": 0.7409975056451307,
+          "firstConfirmedTick": 53,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.28637328754356955,
+          "radius95": 1.585590491069532,
+          "firstConfirmedTick": 124,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9998139880952381
+    },
+    {
+      "cohort": "holdout",
+      "seed": 1061,
+      "mode": "adaptive",
+      "total": 8,
+      "detected": 8,
+      "confirmed": 8,
+      "falseConfirmed": 0,
+      "falseEverConfirmed": 0,
+      "medianError": 0.32742113756592495,
+      "matches": [
+        {
+          "id": 100,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3439001036898131,
+          "radius95": 1.657707262277204,
+          "firstConfirmedTick": 158,
+          "containsTruth95": true
+        },
+        {
+          "id": 101,
+          "band": 0,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6134114411844537,
+          "radius95": 1.7337038472555548,
+          "firstConfirmedTick": 145,
+          "containsTruth95": true
+        },
+        {
+          "id": 110,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.3109421714420368,
+          "radius95": 0.7072386723755707,
+          "firstConfirmedTick": 137,
+          "containsTruth95": true
+        },
+        {
+          "id": 111,
+          "band": 1,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.1903637988685629,
+          "radius95": 1.3624014477323958,
+          "firstConfirmedTick": 120,
+          "containsTruth95": true
+        },
+        {
+          "id": 120,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.08753210538574242,
+          "radius95": 0.7224547844511247,
+          "firstConfirmedTick": 204,
+          "containsTruth95": true
+        },
+        {
+          "id": 121,
+          "band": 2,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.5882472333926304,
+          "radius95": 0.7136048332105752,
+          "firstConfirmedTick": 36,
+          "containsTruth95": true
+        },
+        {
+          "id": 130,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.6691646708668579,
+          "radius95": 1.7617409012684013,
+          "firstConfirmedTick": 91,
+          "containsTruth95": true
+        },
+        {
+          "id": 131,
+          "band": 3,
+          "detected": true,
+          "confirmed": true,
+          "error": 0.1135056992545632,
+          "radius95": 0.7246739878090367,
+          "firstConfirmedTick": 46,
+          "containsTruth95": true
+        }
+      ],
+      "coverage": 0.9879092261904762
+    }
+  ]
+}

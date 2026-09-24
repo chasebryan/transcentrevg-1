@@ -1,0 +1,16 @@
+{
+  "name": "transcentrevg-1",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Evidence-based beacon localisation on a 42 by 32 search grid",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "test": "node --test test/*.test.js",
+    "benchmark": "node tools/benchmark.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "AGPL-3.0-only"
+}
